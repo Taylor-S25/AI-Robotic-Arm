@@ -1,0 +1,22 @@
+       Error Diagnostics for Analysis/Assembly Failure
+
+  All position constraints can't be simultaneously satisfied. 
+The following position constraints can't be satisfied:
+
+
+1) Upper limit of the first translation axis in connection Connection_96 in
+model GRIPPER_ (component id path [91]) can't be satisfied.
+
+
+2) The rigid body body2 connected by Connection_112 in model GRIPPER_ (component
+id path [91]) can't be properly oriented. 
+
+
+3) The following kinematic loop can't be closed: body13 - body1 - body2 - body53
+- body13.
+
+
+4) The following kinematic loop can't be closed: body13 - body53 - body2 - body1
+- body13.
+
+
