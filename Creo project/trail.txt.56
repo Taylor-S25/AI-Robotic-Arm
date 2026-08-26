@@ -1,0 +1,97 @@
+﻿!trail file version No. 2530
+!Creo  TM  12  (c) 2026 by PTC Inc.  All Rights Reserved.
+!Exit Logger data:
+!	Process ID: 24472
+!	Application: Creo_Parametric
+!	Start date&time: 2026/08/26  20:31:00
+!	language: usascii
+!	machine type: x86e_win64
+!	datecode: 12.4.0.0
+!	Server: NONE
+!	Workspace: NONE
+!	traceback file: C:\AI-Robotic-Arm\Creo project\traceback.log
+!end Exit Logger data.
+< 0 1.206519 1912 0 0 1018 1920 0 0 1080 13
+!mem_use INCREASE Blocks 993024, AppSize 15822980, SysSize 37418152
+< 0 1.064000 1064 0 0 998 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 998 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 1001 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 1004 1920 0 0 1080 13
+< 0 0.960000 960 0 0 1004 1920 0 0 1080 13
+< 0 0.911407 1644 0 0 769 1920 0 0 1080 13
+< 0 0.911407 1576 0 0 769 1920 0 0 1080 13
+< 0 0.910222 1576 0 0 768 1920 0 0 1080 13
+< 0 0.922074 1586 0 0 778 1920 0 0 1080 13
+!%CD26-Aug-26 20:31:04
+!%CI20:31:04 Welcome to Creo Parametric Educational Edition 12.4.0.0.
+!AFX datecode: 12.4.0.0-rc.1 2025.03.05
+!AFX exec path: C:\Program Files\PTC\Creo 12.4.0.0\Common Files\afx\x86e_win64\afx120.dll
+!AFX text path: C:\Program Files\PTC\Creo 12.4.0.0\Common Files\afx\
+< 0 0.922074 1702 0 0 778 1920 0 0 1080 13
+< 0 0.916148 1702 0 0 773 1920 0 0 1080 13
+0.000000 0.000000 N 0 0.916148148 0
+0.000000 0.000000 N 0 0.916148148 0
+!%CP20:31:05 Enter object name: 
+!%TR
+C:\AI-Robotic-Arm\Creo project\joint_.prt.1
+< 2 0.118519 178 0 0 100 1920 0 0 1080 13
+!mem_use INCREASE Blocks 1057986, AppSize 42971770, SysSize 65581040
+~ Trail `` `` `DLG_PREVIEW_POST` \
+ `file_open`
+!Command ProCmdModelOpenExe was pushed from the software.
+!26-Aug-26 20:31:07  Start C:\AI-Robotic-Arm\Creo project\joint_.prt.1
+!LIGHT_FIX_MODEL_RMODE is 51
+!26-Aug-26 20:31:07  End   C:\AI-Robotic-Arm\Creo project\joint_.prt.1
+@ oa_sel_filter_set _90_
+!MT_CUST - Applied settings for mode # 1 : MT Part Solid
+< 0 0.916148 1576 0 0 773 1920 0 0 1080 13
+< 0 0.916148 1584 0 0 773 1920 0 0 1080 13
+< 0 0.916148 1576 0 0 773 1920 0 0 1080 13
+< 0 0.916148 1584 0 0 773 1920 0 0 1080 13
+!MT_CUST - Applied settings for mode # 1 : MT Part Solid
+~ Close `SA_BROWSER_WELCOME_SCREEN` `SA_BROWSER_WELCOME_SCREEN`
+~ Activate `main_dlg_cur` `EMBED_BROWSER Close`
+~ Timer `` `` `EmbedBrowserTimer`
+~ Close `main_dlg_cur` `main_dlg_cur`
+!Command ProCmdOSExit was pushed from the software.
+! Message Dialog: Warning
+!               : Creo Parametric Educational Edition will terminate and any unsaved work will be lost.
+!               : Do you really want to exit?
+~ Close `UI Message Dialog` `UI Message Dialog`
+~ MButtonArm `main_dlg_cur` `proe_win` 9 1148 222 0 2 1584 773 1920 1080 21795
+~ Move `main_dlg_cur` `proe_win` 9 1149 222 0 514 1584 773 1920 1080 21802
+~ Move `main_dlg_cur` `proe_win` 9 1151 222 0 514 1584 773 1920 1080 21810
+~ Move `main_dlg_cur` `proe_win` 9 1152 222 0 514 1584 773 1920 1080 21818
+~ Move `main_dlg_cur` `proe_win` 9 1154 222 0 514 1584 773 1920 1080 21835
+~ Move `main_dlg_cur` `proe_win` 9 1156 222 0 514 1584 773 1920 1080 21851
+~ Move `main_dlg_cur` `proe_win` 9 1161 222 0 514 1584 773 1920 1080 21870
+~ Move `main_dlg_cur` `proe_win` 9 1165 223 0 1538 1584 773 1920 1080 21877
+~ Move `main_dlg_cur` `proe_win` 9 1169 224 0 1538 1584 773 1920 1080 21884
+~ Move `main_dlg_cur` `proe_win` 9 1172 225 0 1538 1584 773 1920 1080 21894
+~ Move `main_dlg_cur` `proe_win` 9 1176 227 0 1538 1584 773 1920 1080 21905
+~ Move `main_dlg_cur` `proe_win` 9 1184 229 0 1538 1584 773 1920 1080 21915
+~ Move `main_dlg_cur` `proe_win` 9 1188 230 0 1538 1584 773 1920 1080 21925
+~ Move `main_dlg_cur` `proe_win` 9 1194 230 0 514 1584 773 1920 1080 21941
+~ Move `main_dlg_cur` `proe_win` 9 1198 230 0 514 1584 773 1920 1080 21952
+~ Move `main_dlg_cur` `proe_win` 9 1203 230 0 514 1584 773 1920 1080 21963
+~ Move `main_dlg_cur` `proe_win` 9 1206 230 0 514 1584 773 1920 1080 21973
+~ Move `main_dlg_cur` `proe_win` 9 1208 230 0 514 1584 773 1920 1080 21982
+~ Move `main_dlg_cur` `proe_win` 9 1211 230 0 514 1584 773 1920 1080 21991
+~ Move `main_dlg_cur` `proe_win` 9 1214 230 0 514 1584 773 1920 1080 22001
+~ Move `main_dlg_cur` `proe_win` 9 1218 230 0 514 1584 773 1920 1080 22016
+~ Move `main_dlg_cur` `proe_win` 9 1221 230 0 514 1584 773 1920 1080 22022
+~ Move `main_dlg_cur` `proe_win` 9 1222 230 0 514 1584 773 1920 1080 22033
+~ Move `main_dlg_cur` `proe_win` 9 1225 230 0 514 1584 773 1920 1080 22046
+~ Move `main_dlg_cur` `proe_win` 9 1226 230 0 514 1584 773 1920 1080 22054
+~ Move `main_dlg_cur` `proe_win` 9 1227 230 0 514 1584 773 1920 1080 22068
+~ Move `main_dlg_cur` `proe_win` 9 1228 230 0 514 1584 773 1920 1080 22107
+~ MButtonDisarm `main_dlg_cur` `proe_win` 9 1228 230 0 0 1584 773 1920 1080 22314
+~ Close `main_dlg_cur` `main_dlg_cur`
+!Command ProCmdOSExit was pushed from the software.
+! Message Dialog: Warning
+!               : Creo Parametric Educational Edition will terminate and any unsaved work will be lost.
+!               : Do you really want to exit?
+~ Activate `UI Message Dialog` `yes`
+!%CW20:31:20 New objects created with this educational version of Creo Parametric will not be
+!%C_compatible with commercially licensed Creo Parametric software.
+!End of Trail File

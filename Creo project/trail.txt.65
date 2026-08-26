@@ -1,0 +1,38 @@
+﻿!trail file version No. 2530
+!Creo  TM  12  (c) 2026 by PTC Inc.  All Rights Reserved.
+!Exit Logger data:
+!	Process ID: 15584
+!	Application: Creo_Parametric
+!	Start date&time: 2026/08/26  20:37:47
+!	language: usascii
+!	machine type: x86e_win64
+!	datecode: 12.4.0.0
+!	Server: NONE
+!	Workspace: NONE
+!	traceback file: C:\AI-Robotic-Arm\Creo project\traceback.log
+!end Exit Logger data.
+< 0 1.206519 1912 0 0 1018 1920 0 0 1080 13
+!mem_use INCREASE Blocks 992701, AppSize 11471146, SysSize 32970136
+< 0 1.064000 1064 0 0 998 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 998 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 1001 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 1004 1920 0 0 1080 13
+< 0 0.960000 960 0 0 1004 1920 0 0 1080 13
+< 0 0.911407 1644 0 0 769 1920 0 0 1080 13
+< 0 0.911407 1576 0 0 769 1920 0 0 1080 13
+< 0 0.910222 1576 0 0 768 1920 0 0 1080 13
+< 0 0.922074 1586 0 0 778 1920 0 0 1080 13
+!%CIWelcome to Creo Parametric Educational Edition 12.4.0.0.
+!AFX datecode: 12.4.0.0-rc.1 2025.03.05
+!AFX exec path: C:\Program Files\PTC\Creo 12.4.0.0\Common Files\afx\x86e_win64\afx120.dll
+!AFX text path: C:\Program Files\PTC\Creo 12.4.0.0\Common Files\afx\
+< 0 0.922074 1702 0 0 778 1920 0 0 1080 13
+< 0 0.916148 1702 0 0 773 1920 0 0 1080 13
+~ Close `main_dlg_cur` `main_dlg_cur`
+!mem_use INCREASE Blocks 1051362, AppSize 51830185, SysSize 74527328
+!Command ProCmdOSExit was pushed from the software.
+! Message Dialog: Warning
+!               : Creo Parametric Educational Edition will terminate and any unsaved work will be lost.
+!               : Do you really want to exit?
+~ Activate `UI Message Dialog` `yes`
+!End of Trail File

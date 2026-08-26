@@ -1,0 +1,205 @@
+﻿!trail file version No. 2530
+!Creo  TM  12  (c) 2026 by PTC Inc.  All Rights Reserved.
+!Exit Logger data:
+!	Process ID: 24540
+!	Application: Creo_Parametric
+!	Start date&time: 2026/08/26  20:10:19
+!	language: usascii
+!	machine type: x86e_win64
+!	datecode: 12.4.0.0
+!	Server: NONE
+!	Workspace: NONE
+!	traceback file: C:\AI-Robotic-Arm\Creo project\traceback.log
+!end Exit Logger data.
+< 0 1.206519 1912 0 0 1018 1920 0 0 1080 13
+!mem_use INCREASE Blocks 993041, AppSize 15865844, SysSize 37457728
+< 0 1.064000 1064 0 0 998 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 998 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 1001 1920 0 0 1080 13
+< 0 1.067000 1067 0 0 1004 1920 0 0 1080 13
+< 0 0.960000 960 0 0 1004 1920 0 0 1080 13
+< 0 0.911407 1644 0 0 769 1920 0 0 1080 13
+< 0 0.911407 1576 0 0 769 1920 0 0 1080 13
+< 0 0.910222 1576 0 0 768 1920 0 0 1080 13
+< 0 0.922074 1586 0 0 778 1920 0 0 1080 13
+!%CD26-Aug-26 20:10:23
+!%CI20:10:23 Welcome to Creo Parametric Educational Edition 12.4.0.0.
+!AFX datecode: 12.4.0.0-rc.1 2025.03.05
+!AFX exec path: C:\Program Files\PTC\Creo 12.4.0.0\Common Files\afx\x86e_win64\afx120.dll
+!AFX text path: C:\Program Files\PTC\Creo 12.4.0.0\Common Files\afx\
+< 0 0.922074 1702 0 0 778 1920 0 0 1080 13
+< 0 0.916148 1702 0 0 773 1920 0 0 1080 13
+0.000000 0.000000 N 0 0.916148148 0
+0.000000 0.000000 N 0 0.916148148 0
+!%CP20:10:25 Enter object name: 
+!%TR
+C:\AI-Robotic-Arm\Creo project\practice_.asm.6
+< 2 0.118519 178 0 0 100 1920 0 0 1080 13
+!mem_use INCREASE Blocks 1058006, AppSize 43016642, SysSize 65620616
+~ Trail `` `` `DLG_PREVIEW_POST` \
+ `file_open`
+!Command ProCmdModelOpenExe was pushed from the software.
+!26-Aug-26 20:10:26  Start C:\AI-Robotic-Arm\Creo project\practice_.asm.6
+!LIGHT_FIX_MODEL_RMODE is 51
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\plate_.prt.2
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\plate_.prt.2
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\basejoint_.prt.2
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\basejoint_.prt.2
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\arm_.prt.3
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\arm_.prt.3
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\pannel_.prt.3
+!sket_eps       2.662725353
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\pannel_.prt.3
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\bearing_2.prt.1
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\bearing_2.prt.1
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\pole_.prt.2
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\pole_.prt.2
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\pannel_xs.prt.3
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\pannel_xs.prt.3
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\arm_xs.prt.2
+!26-Aug-26 20:10:27  End   C:\AI-Robotic-Arm\Creo project\arm_xs.prt.2
+!26-Aug-26 20:10:27  Start C:\AI-Robotic-Arm\Creo project\bearing3_.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\bearing3_.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\pole2_.prt.2
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\pole2_.prt.2
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\arm3_.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\arm3_.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\finalprt_.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\finalprt_.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\8x10_.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\8x10_.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\gripper_.asm.40
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\main_bracket.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\main_bracket.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\bearing_.prt.2
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\bearing_.prt.2
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\thread_rod.prt.2
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\thread_rod.prt.2
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\sx_bracket.prt.4
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\sx_bracket.prt.4
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\connector_1.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\connector_1.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\2nd_bracket.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\2nd_bracket.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\prt_6.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\prt_6.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\grippers_.prt.1
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\grippers_.prt.1
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\servomotor_.prt.3
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\servomotor_.prt.3
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\8x20.prt.2
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\8x20.prt.2
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\8x25.prt.3
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\8x25.prt.3
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\8x40.prt.2
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\8x40.prt.2
+!26-Aug-26 20:10:28  Start C:\AI-Robotic-Arm\Creo project\8x50.prt.3
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\8x50.prt.3
+!26-Aug-26 20:10:28  End   C:\AI-Robotic-Arm\Creo project\gripper_.asm.40
+!Mechanism Design Command Script File
+!	Version: 	Q_12_55:spg
+!	Platform:	x86e_win64
+!	Created: 	8/26/2026 at 20:10:28
+!Mechanism Design Command Script File
+!	Version: 	Q_12_55:spg
+!	Platform:	x86e_win64
+!	Created: 	8/26/2026 at 20:10:28
+!ProgressBarDlg: Regen Started
+< 0 0.916148 1550 0 0 773 1920 0 0 1080 13
+!mem_use INCREASE Blocks 1061471, AppSize 71225711, SysSize 95289816
+!ProgressBarDlg: Regen Completed
+!26-Aug-26 20:10:29  End   C:\AI-Robotic-Arm\Creo project\practice_.asm.6
+!%CW20:10:30 New objects created with this educational version of Creo Parametric will not be
+!%C_compatible with commercially licensed Creo Parametric software.
+@ oa_sel_filter_set _90_
+< 0 0.910222 1550 0 0 768 1920 0 0 1080 13
+!MT_CUST - Applied settings for mode # 6 : MT Asm Design
+< 0 0.910222 1576 0 0 768 1920 0 0 1080 13
+< 0 0.910222 1584 0 0 768 1920 0 0 1080 13
+~ Activate `main_dlg_cur` `EMBED_BROWSER Close`
+~ Timer `` `` `EmbedBrowserTimer`
+~ LButtonArm `main_dlg_cur` `proe_win` 9 1274 152 0 1 1584 768 1920 1080 18744
+~ Move `main_dlg_cur` `proe_win` 9 1274 152 0 1 1584 768 1920 1080 18751
+~ Move `main_dlg_cur` `proe_win` 9 1274 152 0 1 1584 768 1920 1080 18784
+~ LButtonDisarm `main_dlg_cur` `proe_win` 9 1274 152 0 0 1584 768 1920 1080 18864
+@sel_pz_xyz 1029.5410156250 676.7578125000 1029.5410156250 676.7578125000 0.0000000000
+@ sel view 0
+ -1.331413 0.143541 0.101784 0.074881 -0.240814 1.319101
+ 0.159239 1.313404 0.230735 743.453309 154.528736 -1947.652661 1.000000 0.000000 0
+@ stack attr twk_s_eps
+~ Command `ProCmdEnvDtmWithFillDisp`  0
+~ Command `ProCmdEnvDtmWithFillDisp`  1
+~ Command `ProCmdEnvDtmDisp`  0
+!%CI20:10:39 Datum planes will not be displayed.
+~ MButtonArm `main_dlg_cur` `proe_win` 9 1171 259 0 2 1584 768 1920 1080 25927
+~ Move `main_dlg_cur` `proe_win` 9 1172 259 0 514 1584 768 1920 1080 25943
+~ Move `main_dlg_cur` `proe_win` 9 1173 260 0 1538 1584 768 1920 1080 25952
+~ Move `main_dlg_cur` `proe_win` 9 1176 262 0 1538 1584 768 1920 1080 25959
+~ Move `main_dlg_cur` `proe_win` 9 1179 264 0 1538 1584 768 1920 1080 25967
+~ Move `main_dlg_cur` `proe_win` 9 1185 269 0 1538 1584 768 1920 1080 25993
+~ Move `main_dlg_cur` `proe_win` 9 1191 275 0 1538 1584 768 1920 1080 26016
+~ Move `main_dlg_cur` `proe_win` 9 1194 278 0 1538 1584 768 1920 1080 26045
+~ Move `main_dlg_cur` `proe_win` 9 1199 283 0 1538 1584 768 1920 1080 26074
+~ Move `main_dlg_cur` `proe_win` 9 1204 287 0 1538 1584 768 1920 1080 26119
+~ Move `main_dlg_cur` `proe_win` 9 1209 289 0 1538 1584 768 1920 1080 26184
+~ Move `main_dlg_cur` `proe_win` 9 1222 299 0 1538 1584 768 1920 1080 26351
+~ Move `main_dlg_cur` `proe_win` 9 1224 300 0 1538 1584 768 1920 1080 26382
+~ Move `main_dlg_cur` `proe_win` 9 1225 301 0 1538 1584 768 1920 1080 26406
+~ Move `main_dlg_cur` `proe_win` 9 1227 302 0 1538 1584 768 1920 1080 26433
+~ Move `main_dlg_cur` `proe_win` 9 1229 304 0 1538 1584 768 1920 1080 26464
+~ Move `main_dlg_cur` `proe_win` 9 1230 305 0 1538 1584 768 1920 1080 26490
+~ Move `main_dlg_cur` `proe_win` 9 1233 308 0 1538 1584 768 1920 1080 26525
+~ Move `main_dlg_cur` `proe_win` 9 1236 311 0 1538 1584 768 1920 1080 26558
+~ Move `main_dlg_cur` `proe_win` 9 1239 314 0 1538 1584 768 1920 1080 26589
+~ Move `main_dlg_cur` `proe_win` 9 1241 318 0 1538 1584 768 1920 1080 26621
+~ Move `main_dlg_cur` `proe_win` 9 1244 322 0 1538 1584 768 1920 1080 26654
+~ Move `main_dlg_cur` `proe_win` 9 1247 327 0 1538 1584 768 1920 1080 26689
+~ Move `main_dlg_cur` `proe_win` 9 1248 329 0 1538 1584 768 1920 1080 26726
+~ Move `main_dlg_cur` `proe_win` 9 1250 333 0 1538 1584 768 1920 1080 26763
+~ Move `main_dlg_cur` `proe_win` 9 1252 336 0 1538 1584 768 1920 1080 26801
+~ Move `main_dlg_cur` `proe_win` 9 1253 339 0 1538 1584 768 1920 1080 26840
+~ Move `main_dlg_cur` `proe_win` 9 1255 342 0 1538 1584 768 1920 1080 26877
+~ Move `main_dlg_cur` `proe_win` 9 1257 345 0 1538 1584 768 1920 1080 26913
+~ Move `main_dlg_cur` `proe_win` 9 1259 348 0 1538 1584 768 1920 1080 26951
+~ Move `main_dlg_cur` `proe_win` 9 1260 350 0 1538 1584 768 1920 1080 26987
+~ Move `main_dlg_cur` `proe_win` 9 1262 352 0 1538 1584 768 1920 1080 27024
+~ Move `main_dlg_cur` `proe_win` 9 1265 355 0 1538 1584 768 1920 1080 27062
+~ Move `main_dlg_cur` `proe_win` 9 1270 359 0 1538 1584 768 1920 1080 27102
+~ Move `main_dlg_cur` `proe_win` 9 1277 365 0 1538 1584 768 1920 1080 27140
+~ Move `main_dlg_cur` `proe_win` 9 1282 369 0 1538 1584 768 1920 1080 27178
+~ Move `main_dlg_cur` `proe_win` 9 1284 371 0 1538 1584 768 1920 1080 27215
+~ Move `main_dlg_cur` `proe_win` 9 1286 372 0 1538 1584 768 1920 1080 27253
+~ Move `main_dlg_cur` `proe_win` 9 1288 374 0 1538 1584 768 1920 1080 27291
+~ Move `main_dlg_cur` `proe_win` 9 1290 376 0 1538 1584 768 1920 1080 27329
+~ Move `main_dlg_cur` `proe_win` 9 1292 377 0 1538 1584 768 1920 1080 27368
+~ Move `main_dlg_cur` `proe_win` 9 1294 378 0 1538 1584 768 1920 1080 27405
+~ Move `main_dlg_cur` `proe_win` 9 1293 378 0 514 1584 768 1920 1080 27911
+~ Move `main_dlg_cur` `proe_win` 9 1289 372 0 1538 1584 768 1920 1080 27936
+~ Move `main_dlg_cur` `proe_win` 9 1281 362 0 1538 1584 768 1920 1080 27961
+~ Move `main_dlg_cur` `proe_win` 9 1265 345 0 1538 1584 768 1920 1080 27995
+~ Move `main_dlg_cur` `proe_win` 9 1247 327 0 1538 1584 768 1920 1080 28028
+~ Move `main_dlg_cur` `proe_win` 9 1233 315 0 1538 1584 768 1920 1080 28057
+~ Move `main_dlg_cur` `proe_win` 9 1227 310 0 1538 1584 768 1920 1080 28081
+~ Move `main_dlg_cur` `proe_win` 9 1223 306 0 1538 1584 768 1920 1080 28106
+~ Move `main_dlg_cur` `proe_win` 9 1219 302 0 1538 1584 768 1920 1080 28132
+~ Move `main_dlg_cur` `proe_win` 9 1213 297 0 1538 1584 768 1920 1080 28163
+~ Move `main_dlg_cur` `proe_win` 9 1210 294 0 1538 1584 768 1920 1080 28191
+~ Move `main_dlg_cur` `proe_win` 9 1206 290 0 1538 1584 768 1920 1080 28228
+~ Move `main_dlg_cur` `proe_win` 9 1202 285 0 1538 1584 768 1920 1080 28269
+~ Move `main_dlg_cur` `proe_win` 9 1199 282 0 1538 1584 768 1920 1080 28309
+~ Move `main_dlg_cur` `proe_win` 9 1197 280 0 1538 1584 768 1920 1080 28347
+~ Move `main_dlg_cur` `proe_win` 9 1197 279 0 1026 1584 768 1920 1080 28415
+~ Move `main_dlg_cur` `proe_win` 9 1196 278 0 1538 1584 768 1920 1080 28448
+~ Move `main_dlg_cur` `proe_win` 9 1194 277 0 1538 1584 768 1920 1080 28479
+~ Move `main_dlg_cur` `proe_win` 9 1193 276 0 1538 1584 768 1920 1080 28509
+~ Move `main_dlg_cur` `proe_win` 9 1192 275 0 1538 1584 768 1920 1080 28541
+~ Move `main_dlg_cur` `proe_win` 9 1192 274 0 1026 1584 768 1920 1080 28656
+~ Move `main_dlg_cur` `proe_win` 9 1191 274 0 514 1584 768 1920 1080 28691
+~ MButtonDisarm `main_dlg_cur` `proe_win` 9 1191 274 0 0 1584 768 1920 1080 28840
+~ Close `main_dlg_cur` `main_dlg_cur`
+!Command ProCmdOSExit was pushed from the software.
+! Message Dialog: Warning
+!               : Creo Parametric Educational Edition will terminate and any unsaved work will be lost.
+!               : Do you really want to exit?
+~ Activate `UI Message Dialog` `yes`
+!End of Trail File
