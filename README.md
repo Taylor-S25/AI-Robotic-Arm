@@ -3,7 +3,7 @@ Design and development of an AI enabled robotic arm
 
 # Introduction & Goals
 
-inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. Currently, the main focus is on the CAD development of this project. However, the long term goal is to explore AI assisted control. 
+Inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. Currently, the main focus is on the CAD development of this project. However, the long term goal is to explore AI assisted control. 
 
 - What data are you working with
 - What tools are you using
@@ -45,8 +45,7 @@ Draw this yourself, export it as a PNG and commit it into `/images`. Do not link
 - [Demo](#demo)
 - [What Breaks](#what-breaks)
 - [Conclusion](#conclusion)
-- [Follow Me On](#follow-me-on)
-- [Appendix](#appendix)
+
 
 # The Data Set
 
@@ -149,10 +148,4 @@ Then go back up to the introduction and paste the short version of this into the
 
 Make the lessons specific. "I would add more tests" says nothing because everyone writes it. "I partitioned by ingest date and should have partitioned by event date, because every query I actually write filters on event date and now they all scan everything" says you went back and looked at your own work.
 
-# Follow Me On
-
-Add the link to your LinkedIn profile.
-
-# Appendix
-
-This template comes from Andreas Kretz's Data Engineering Cookbook. If it helped you, point people back to it: [The Data Engineering Cookbook](https://github.com/andkret/Cookbook)
+(https://github.com/andkret/Cookbook)
