@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "author": "Velxio",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo_1788542710411_8efztpzn3",
+      "top": -138,
+      "left": 361,
+      "attrs": {
+        "angle": 0,
+        "horn": "single",
+        "hornColor": "#ccc"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "potentiometer_1788542728162_i8ogkrg71",
+      "top": -23,
+      "left": 765,
+      "attrs": {
+        "min": 0,
+        "max": 1023,
+        "value": 45,
+        "step": 1,
+        "startDegree": -135,
+        "endDegree": 135
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "potentiometer_1788542735057_khr6mjpe8",
+      "top": -25,
+      "left": 651,
+      "attrs": {
+        "min": 0,
+        "max": 1023,
+        "value": 34,
+        "step": 1,
+        "startDegree": -135,
+        "endDegree": 135
+      }
+    },
+    {
+      "type": "wokwi-breadboard",
+      "id": "breadboard_1788543073440_hok7grvwb",
+      "top": 278,
+      "left": 145,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo_1788543445863_10qtey6gw",
+      "top": 49,
+      "left": 28,
+      "attrs": {
+        "angle": 0,
+        "horn": "single",
+        "hornColor": "#ccc"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo_1788543460349_hbmbtvaxw",
+      "top": -240,
+      "left": 363,
+      "attrs": {
+        "angle": 0,
+        "horn": "single",
+        "hornColor": "#ccc"
+      }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo_1788543641469_x82996lzb",
+      "top": -357,
+      "left": 362,
+      "attrs": {
+        "angle": 0,
+        "horn": "single",
+        "hornColor": "#ccc"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "potentiometer_1788543660588_7mh4wacd9",
+      "top": -27,
+      "left": 538,
+      "attrs": {
+        "min": 0,
+        "max": 1023,
+        "value": 1023,
+        "step": 1,
+        "startDegree": -135,
+        "endDegree": 135
+      }
+    }
+  ],
+  "connections": [
+    [
+      "uno:5V",
+      "breadboard_1788543073440_hok7grvwb:tp.1",
+      "#cc0000",
+      []
+    ],
+    [
+      "uno:GND.2",
+      "breadboard_1788543073440_hok7grvwb:tn.1",
+      "black",
+      []
+    ],
+    [
+      "servo_1788542710411_8efztpzn3:V+",
+      "breadboard_1788543073440_hok7grvwb:tp.16",
+      "#cc0000",
+      []
+    ],
+    [
+      "servo_1788542710411_8efztpzn3:GND",
+      "breadboard_1788543073440_hok7grvwb:tn.16",
+      "black",
+      []
+    ],
+    [
+      "servo_1788542710411_8efztpzn3:PWM",
+      "uno:9",
+      "#22c55e",
+      []
+    ],
+    [
+      "potentiometer_1788542728162_i8ogkrg71:VCC",
+      "breadboard_1788543073440_hok7grvwb:tp.50",
+      "#cc0000",
+      []
+    ],
+    [
+      "potentiometer_1788542728162_i8ogkrg71:GND",
+      "breadboard_1788543073440_hok7grvwb:tn.50",
+      "black",
+      []
+    ],
+    [
+      "potentiometer_1788542728162_i8ogkrg71:SIG",
+      "uno:A0",
+      "#22c55e",
+      []
+    ],
+    [
+      "servo_1788543460349_hbmbtvaxw:V+",
+      "breadboard_1788543073440_hok7grvwb:tp.15",
+      "#cc0000",
+      []
+    ],
+    [
+      "servo_1788543460349_hbmbtvaxw:GND",
+      "breadboard_1788543073440_hok7grvwb:tn.15",
+      "black",
+      []
+    ],
+    [
+      "potentiometer_1788542735057_khr6mjpe8:SIG",
+      "uno:A1",
+      "#22c55e",
+      []
+    ],
+    [
+      "potentiometer_1788542735057_khr6mjpe8:VCC",
+      "breadboard_1788543073440_hok7grvwb:tp.46",
+      "#cc0000",
+      []
+    ],
+    [
+      "potentiometer_1788542735057_khr6mjpe8:GND",
+      "breadboard_1788543073440_hok7grvwb:tn.46",
+      "black",
+      []
+    ],
+    [
+      "servo_1788543460349_hbmbtvaxw:PWM",
+      "uno:10",
+      "#22c55e",
+      []
+    ],
+    [
+      "potentiometer_1788543660588_7mh4wacd9:GND",
+      "breadboard_1788543073440_hok7grvwb:tn.36",
+      "black",
+      []
+    ],
+    [
+      "potentiometer_1788543660588_7mh4wacd9:VCC",
+      "breadboard_1788543073440_hok7grvwb:tp.36",
+      "#cc0000",
+      []
+    ],
+    [
+      "potentiometer_1788543660588_7mh4wacd9:SIG",
+      "uno:A2",
+      "#22c55e",
+      []
+    ],
+    [
+      "servo_1788543641469_x82996lzb:PWM",
+      "uno:11",
+      "#22c55e",
+      []
+    ],
+    [
+      "servo_1788543641469_x82996lzb:V+",
+      "breadboard_1788543073440_hok7grvwb:tp.11",
+      "#cc0000",
+      []
+    ],
+    [
+      "servo_1788543641469_x82996lzb:GND",
+      "breadboard_1788543073440_hok7grvwb:tn.11",
+      "black",
+      []
+    ]
+  ]
+}
