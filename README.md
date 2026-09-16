@@ -33,33 +33,19 @@ Draw this yourself and add it to the GitHub repository when you are ready. Keep 
 # Contents
 
 - [Project Overview & Requirements](#Project-Overview-&-Requirements)
-
 - [Constraints](#Constraints)
-
 - [Used Tools & Components](#Used-Tools-&-Components)
-
-- [CAD & Mechanical Design](#CAD-&-Mechancial-Design)
-
-- [Actuation, Electronics & Control](#Actuation-,Electronics-&-Control)
-
-- [Manufacturing & Prototyping](#Manufacturing-&-Prototyping)
-
-- [Version Control & Documentation](#Version-Control-&-Docummentation)
-
+  - [CAD & Mechanical Design](#CAD-&-Mechancial-Design)
+  - [Actuation, Electronics & Control](#Actuation-,Electronics-&-Control)
+  - [Manufacturing & Prototyping](#Manufacturing-&-Prototyping)
+  - [Version Control & Documentation](#Version-Control-&-Docummentation)
 - [Design Development & Iteration](#Design-Development-&-Iteration)
-
-- [Tolerances, Fits & Interfaces](#Tolerancing,-Fits-&-Interfaces)
-
+  - [Tolerances, Fits & Interfaces](#Tolerancing,-Fits-&-Interfaces)
 - [Testing & Validation](#Testing-&-Validation)
-
 - [Demo](#Demo)
-
 - [What Breaks / Current Limitations](#What-Breaks-/-Current-Limitations)
-
 - [Future Development](#Future-Development)
-
 - [Repository Structure](#Repositary-Structure)
-
 - [Conclusion](#Conclusion)
 
 ## Project Overview & Requirements
@@ -98,7 +84,7 @@ Manufacturing cost, print mass or material usage if these affected the design.
 
 For example, if actuator torque affected a design decision, show the load, distance from the joint and the resulting torque estimate. If power affected the electronics, show the expected current demand. A number gives the tool or component choice something to point at.
 
-Constraints
+## Constraints
 
 What you had to work with. Be straight about it; this is not an apology. Constraints are often the reason the final design looks the way it does.
 
@@ -116,7 +102,7 @@ Safety / reliability: [pinch points, current limits, load limits, acceptable tes
 
 "I could not manufacture every part within the available budget, so CAD motion studies and simulations were used to develop the unmanufactured sections" is useful engineering context. It explains a decision instead of hiding it.
 
-Used Tools & Components
+## Used Tools & Components
 
 Explain which tools, components and processes you used and why.
 
@@ -128,7 +114,7 @@ For important choices, state what alternative you considered and why you rejecte
 
 A choice with an alternative beside it is much stronger than a choice on its own. "I used a servo motor" says what you bought. "I chose a servo because position control was simple and compact for this prototype; a DC motor would have required additional sensing and control" explains an engineering decision.
 
-CAD & Mechanical Design
+## CAD & Mechanical Design
 
 PTC Creo / CAD software used: [what you used and why]
 
@@ -162,7 +148,7 @@ Limits / protection: [software angle limits, safe start position, external power
 
 Link to the source code rather than pasting the entire program into the README. A short snippet is fine only if it shows something worth explaining.
 
-Manufacturing & Prototyping
+## Manufacturing & Prototyping
 
 Explain which parts were physically manufactured and which remained CAD-only.
 
@@ -178,7 +164,7 @@ State any reprints or remanufactured parts and exactly what changed between vers
 
 Include the approximate bill of materials and total project cost if cost influenced decisions.
 
-Version Control & Documentation
+## Version Control & Documentation
 
 Explain how GitHub is used to organise the project.
 
@@ -204,7 +190,7 @@ Link to the relevant CAD revision, image, measurement or test evidence instead o
 
 This is the section that separates a developed engineering project from a single finished CAD model. The reader should be able to see a chain of evidence: observation -> reasoning -> design change -> result.
 
-Tolerances, Fits & Interfaces
+## Tolerances, Fits & Interfaces
 
 State the nominal dimensions of important mating parts.
 
@@ -218,7 +204,7 @@ State whether the change solved the problem and what you learned from it.
 
 Use actual numbers wherever possible. "The fit was improved" is weak; "the bore was increased from X mm to Y mm after the first print bound on the shaft" is evidence.
 
-Testing & Validation
+## Testing & Validation
 
 Explain what you tested and why the test mattered.
 
@@ -234,7 +220,7 @@ Useful tests for this type of project may include joint range of motion, gripper
 
 When something goes wrong, say what the system does or what you do next. For example: a joint binds, a servo reaches its torque limit, the power supply cannot support simultaneous movement, or a printed part flexes. Explain how the problem is detected and how the design is changed or limited.
 
-Demo
+## Demo
 
 Add a short demonstration video here when you are ready.
 
@@ -244,7 +230,7 @@ State exactly what the viewer is seeing: which joints move, what input is being 
 
 A short video of the physical system actually moving can do more than several paragraphs. It gives the reader immediate evidence that the mechanism, electronics and control have been brought together.
 
-What Breaks / Current Limitations
+## What Breaks / Current Limitations
 
 Three or four honest points. What did you choose not to solve, what reaches its limit first, and what would you change if you built the next version?
 
@@ -260,7 +246,7 @@ Three or four honest points. What did you choose not to solve, what reaches its 
 
 You do not have to fix every limitation before publishing the project. Knowing where the current design stops being reliable is stronger than pretending there is no ceiling.
 
-Future Development
+## Future Development
 
 Near-term mechanical improvement: [the next change that directly addresses a current limitation]
 
@@ -272,7 +258,7 @@ Longer-term development: [AI-assisted control, computer vision, autonomous objec
 
 Keep the future section tied to the current project. The next step should solve something that the present prototype cannot yet do, rather than becoming a wish list of unrelated technology.
 
-Repository Structure
+## Repository Structure
 
 /CAD - Creo parts, assemblies, drawings and exported files
 
@@ -288,7 +274,7 @@ README.md - the clear project story: goals, decisions, evidence, results, limita
 
 Only create folders you actually need. The point is to make the project easy to navigate, not to make the repository look artificially complicated.
 
-Conclusion
+## Conclusion
 
 Write a comprehensive conclusion.
 
