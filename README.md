@@ -30,7 +30,7 @@ Goal 3: Implement basic control circuitry
 
 ## Initial Architecture design and features
 ![Initial sketch before CAD](Images/Initial%20sketch%20before%20CAD.jpg)
-Draw this yourself and add it to the GitHub repository when you are ready. Keep it simple. Show how the main parts of the system connect, for example: user input -> Arduino/controller -> servo motors -> joints/linkages -> arm/gripper movement, with the power supply shown separately. If someone only looks at one diagram in the repository, it should explain the complete system.
+Early concept sketch showing arm structure joint movement and gripper mechanism.
 
 # Contents
 
