@@ -1,4 +1,4 @@
-#H1 Robotic-Arm/Gripper
+# Robotic-Arm/Gripper
 
 Design and development of an Arduino controlled robotic arm/gripper
 
