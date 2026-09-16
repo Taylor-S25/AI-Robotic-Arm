@@ -1,5 +1,5 @@
-# AI-Robotic-Arm
-Design and development of an AI enabled robotic arm 
+# Robotic-Arm/Gripper
+Design and development of an Arduino conrolled enabled robotic arm/gripper 
 
 # Introduction & Goals
 
