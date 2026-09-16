@@ -52,7 +52,7 @@ Early concept sketch showing arm structure joint movement and gripper mechanism.
 
 ## Project Overview & Requirements
 
-Explain what the robotic arm/gripper is intended to do.
+Explain what the robotic arm/gripper is intended to do. 
 
 Explain the overall mechanical layout and the number of joints or degrees of freedom.
 
@@ -88,21 +88,17 @@ For example, if actuator torque affected a design decision, show the load, dista
 
 ## Constraints
 
-What you had to work with. Be straight about it; this is not an apology. Constraints are often the reason the final design looks the way it does.
+Budget: £50 was the maximum amount of money I was willing to spend on this project. This stopped me from being able to 3D print the gripper head of the robotic arm, as I would have gone over budget. Hence I could only 3D print the body for the prototype. Therefore, I decided to simulate how the gripper works as a substitute. 
 
-Budget: [what you were willing or able to spend, and what this stopped you manufacturing or buying]
+Time: The projects deadline was mid September 2026 with a project window frame of about 6 weeks
 
-Time: [the project window and any deadlines]
+Hardware: For this project, I worked primarily with a standard Laptop and iPad. This limited me in simulating how my Robotic arm would react to stress and thermal analysis as simulation required an NVIDIA GPU. furthermore, this project caused me to borrow Arduino, servomotors, potentiometers and more from my university. 
 
-Hardware: [available laptop, Arduino, servo motors, power supply, tools, etc.]
+Manufacturing: Manufacturing for the robotic arm was completed at my university as I didn't own a 3D printer. Black PLA filament was used for modelling. CAD parts were turned into STL files and exported to the device using a flash drive which I had to purchase, reducing my budget.
 
-Manufacturing: [printer access, build volume, material, minimum feature size, support requirements, outsourced printing, etc.]
+Geometry / packaging: The robotic arm was limited due to the size of the wings on each servomotor. Hence I had to order servo linkages off Amazon to attach each members to each servomotor causing a reduction in my budget that could have been spent else where.
 
-Geometry / packaging: [overall size, joint clearances, actuator mounting space, cable routing]
-
-Safety / reliability: [pinch points, current limits, load limits, acceptable test conditions]
-
-"I could not manufacture every part within the available budget, so CAD motion studies and simulations were used to develop the unmanufactured sections" is useful engineering context. It explains a decision instead of hiding it.
+Safety / reliability: Safety and reliability limits involved the circuitry not being built into the robotic arms design. Hence loose wiring occurring was greater meaning that the devices function could fail. 
 
 ## Used Tools & Components
 
