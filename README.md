@@ -6,25 +6,27 @@ Design and development of an Arduino controlled robotic arm/gripper
 
 Inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. The project combines mechanical design, CAD, prototyping and electronic control, with the long-term goal of exploring AI-assisted control.
 
-What problem or idea is the project trying to address?
+The Problem this project it trying to address is fatigue. This robotic arm is to provide assistance to the user hence they can receive an extra pair of hands when needed. 
 
-What stage is the project currently at?
+This project is currently in the last stage of its development as the assembly just needs to be upgraded with servo control as I am currently waiting for ordered parts. 
 
-What tools, components and manufacturing methods are you using?
+Tools, components and manufacturing methods:
+- PTC Creo for CAD development
+- 3D printing for manufacture
+- Velxio for simulation control
+- Arduino, servomotors and potentiometers for motion control
+- GitHub for Project documentation 
 
-What are you doing with those tools, rather than simply listing them?
+*Abstract* Once the project is finished, come back and add a short summary of the final outcome here as well.
 
-Once the project is finished, come back and add a short summary of the final outcome here as well.
+Goal 1: Robotic Arm must achieve mechanical motion 
+ Result: The servomotors rotated the elbow joints by at least 60 degrees
 
-Then list your goals. Two or three is plenty. Each goal gets a line saying how you know it worked. Where possible, make that line measurable. "The arm should move smoothly" is difficult to prove. "The elbow joint should rotate through at least 120 degrees without binding" can be checked.
+Goal 2: Fabricte a physical prototype 
+  Result: CAD components were 3D printed 
 
-Goal 1: [what the project has to achieve, in plain language]  How I know it worked: [the measurable version]
-
-Goal 2: [...]  How I know it worked: [...]
-
-Goal 3: [optional]  How I know it worked: [...]
-
-Why this matters: starting with the engineering objective makes the rest of the portfolio read as a design process rather than a list of software, parts and tools.
+Goal 3: Implement basic control circuitry  
+  Result: wired a potentiometer to a servomotor and controlled it with an Arduino  
 
 Architecture
 
