@@ -2,7 +2,7 @@
 
 Design and development of an Arduino controlled robotic arm/gripper
 
-Introduction & Goals
+### Introduction & Goals
 
 Inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. The project combines mechanical design, CAD, prototyping and electronic control, with the long-term goal of exploring AI-assisted control.
 
@@ -30,39 +30,39 @@ Architecture
 
 Draw this yourself and add it to the GitHub repository when you are ready. Keep it simple. Show how the main parts of the system connect, for example: user input -> Arduino/controller -> servo motors -> joints/linkages -> arm/gripper movement, with the power supply shown separately. If someone only looks at one diagram in the repository, it should explain the complete system.
 
-Contents
+# Contents
 
-Project Overview & Requirements
+- [Project Overview & Requirements](#Project-Overview-&-Requirements)
 
-Constraints
+- [Constraints](#Constraints)
 
-Used Tools & Components
+- [Used Tools & Components](#Used-Tools-&-Components)
 
-CAD & Mechanical Design
+- [CAD & Mechanical Design](#CAD-&-Mechancial-Design)
 
-Actuation, Electronics & Control
+- [Actuation, Electronics & Control](#Actuation-,Electronics-&-Control)
 
-Manufacturing & Prototyping
+- [Manufacturing & Prototyping](#Manufacturing-&-Prototyping)
 
-Version Control & Documentation
+- [Version Control & Documentation](#Version-Control-&-Docummentation)
 
-Design Development & Iteration
+- [Design Development & Iteration](#Design-Development-&-Iteration)
 
-Tolerances, Fits & Interfaces
+- [Tolerances, Fits & Interfaces](#Tolerancing,-Fits-&-Interfaces)
 
-Testing & Validation
+- [Testing & Validation](#Testing-&-Validation)
 
-Demo
+- [Demo](#Demo)
 
-What Breaks / Current Limitations
+- [What Breaks / Current Limitations](#What-Breaks-/-Current-Limitations)
 
-Future Development
+- [Future Development](#Future-Development)
 
-Repository Structure
+- [Repository Structure](#Repositary-Structure)
 
-Conclusion
+- [Conclusion](#Conclusion)
 
-Project Overview & Requirements
+## Project Overview & Requirements
 
 Explain what the robotic arm/gripper is intended to do.
 
