@@ -28,8 +28,8 @@ Goal 2: Fabricte a physical prototype
 Goal 3: Implement basic control circuitry  
   Result: wired a potentiometer to a servomotor and controlled it with an Arduino  
 
-Architecture
-
+## Initial Architecture design and features
+![Initial sketch before CAD](Images/Initial-sketch-before-CAD.jpg)
 Draw this yourself and add it to the GitHub repository when you are ready. Keep it simple. Show how the main parts of the system connect, for example: user input -> Arduino/controller -> servo motors -> joints/linkages -> arm/gripper movement, with the power supply shown separately. If someone only looks at one diagram in the repository, it should explain the complete system.
 
 # Contents
