@@ -1,151 +1,331 @@
-# Robotic-Arm/Gripper
-Design and development of an Arduino conrolled enabled robotic arm/gripper 
+Robotic-Arm/Gripper
 
-# Introduction & Goals
+Design and development of an Arduino controlled robotic arm/gripper
 
-Inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. Currently, the main focus is on the CAD development of this project. However, the long term goal is to explore AI assisted control. 
+Introduction & Goals
 
-- What data are you working with
-- What tools are you using
-- What are you doing with these tools
-- Once you are finished, come back and add the conclusion here as well
+Inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. The project combines mechanical design, CAD, prototyping and electronic control, with the long-term goal of exploring AI-assisted control.
 
-Then list your goals. Two or three is plenty. Each goal gets a line saying how you know it worked, and that line needs a number in it. "The pipeline should be fast" is not something anyone can check. "Data is queryable within 10 minutes of the API call" is.
+What problem or idea is the project trying to address?
 
-**Goal 1:** [what the project has to achieve, in plain language]
-**How I know it worked:** [the measurable version]
+What stage is the project currently at?
 
-**Goal 2:** [...]
-**How I know it worked:** [...]
+What tools, components and manufacturing methods are you using?
 
-> **Why this matters:** almost every portfolio project skips straight to the tools. Naming what the project had to achieve, before you name a single tool, is the thing that makes the rest of this document read like a professional wrote it.
+What are you doing with those tools, rather than simply listing them?
 
-## Architecture
+Once the project is finished, come back and add a short summary of the final outcome here as well.
 
-![Architecture](images/architecture.png)
+Then list your goals. Two or three is plenty. Each goal gets a line saying how you know it worked. Where possible, make that line measurable. "The arm should move smoothly" is difficult to prove. "The elbow joint should rotate through at least 120 degrees without binding" can be checked.
 
-Draw this yourself, export it as a PNG and commit it into `/images`. Do not link to a Miro board that needs an account. If someone only looks at one thing in this repo, it will be this picture.
+Goal 1: [what the project has to achieve, in plain language]  How I know it worked: [the measurable version]
 
-# Contents
+Goal 2: [...]  How I know it worked: [...]
 
-- [The Data Set](#the-data-set)
-- [Constraints](#constraints)
-- [Used Tools](#used-tools)
-  - [Connect](#connect)
-  - [Buffer](#buffer)
-  - [Processing](#processing)
-  - [Storage](#storage)
-  - [Visualization](#visualization)
-- [Pipelines](#pipelines)
-  - [Stream Processing](#stream-processing)
-    - [Storing Data Stream](#storing-data-stream)
-    - [Processing Data Stream](#processing-data-stream)
-  - [Batch Processing](#batch-processing)
-  - [Visualizations](#visualizations)
-- [Demo](#demo)
-- [What Breaks](#what-breaks)
-- [Conclusion](#conclusion)
+Goal 3: [optional]  How I know it worked: [...]
 
+Why this matters: starting with the engineering objective makes the rest of the portfolio read as a design process rather than a list of software, parts and tools.
 
-# The Data Set
+Architecture
 
-- Explain the data set
-- Why did you choose it?
-- What do you like about it?
-- What is problematic?
-- What do you want to do with it?
+Draw this yourself and add it to the GitHub repository when you are ready. Keep it simple. Show how the main parts of the system connect, for example: user input -> Arduino/controller -> servo motors -> joints/linkages -> arm/gripper movement, with the power supply shown separately. If someone only looks at one diagram in the repository, it should explain the complete system.
 
-## How much data is it
+Contents
 
-Show the arithmetic, do not just say it is a lot. Walk the chain from the source to the total:
+Project Overview & Requirements
 
-> 2,100 stations, polled every 5 minutes, is 288 polls a day per station, so 604,800 records a day. Each record is around 400 bytes of JSON, which is about 240 MB a day raw and 12 MB a day once it is in Parquet. Over 6 months that is 2.2 GB.
+Constraints
 
-Do this and every tool choice further down has a number to point at. Skip it and your choices look arbitrary, because they are. It also means that when someone asks you in an interview what happens at 100x, you already have the number to multiply.
+Used Tools & Components
 
-# Constraints
+CAD & Mechanical Design
 
-What you had to work with. Be straight about it, this is not an apology.
+Actuation, Electronics & Control
 
-- Budget: [what you were willing to spend per month]
-- Compute: [laptop, one small VM, free tier]
-- Data you do not control: [rate limits, no history available, schema can change without warning]
-- Time: [what you gave this]
+Manufacturing & Prototyping
 
-"No budget, so everything runs on free tiers and my laptop" explains half your architecture in one line, and saying it plainly reads as confidence.
+Version Control & Documentation
 
-# Used Tools
+Design Development & Iteration
 
-- Explain which tools you use and why
-- How do they work (don't go too deep into details, but add links)
-- Why did you choose them
-- How did you set them up
+Tolerances, Fits & Interfaces
 
-For each layer, also say what you considered and rejected. A choice with a rejected alternative next to it is worth ten times a choice on its own, and it is what an interviewer will actually ask about.
+Testing & Validation
 
-> **Storage: Postgres on the same box.** Considered DuckDB and the Snowflake free tier. The whole dataset is 2 GB, but the dashboard reads while the loader writes and DuckDB does not love that. Snowflake would work fine and would also be me picking a warehouse to have a warehouse on my CV.
+Demo
 
-Not every project has all five layers. If you have no buffer, say so and say why you did not need one. An empty section with an honest sentence in it is better than pretending.
+What Breaks / Current Limitations
 
-## Connect
-*Everything for data ingestion — pulling data or receiving it, and the tools and processing that make that happen.*
+Future Development
 
-## Buffer
-*Everything to do with message queues (e.g. Kafka, Kinesis, Pub/Sub) that sit between ingestion and processing.*
+Repository Structure
 
-## Processing
-*Everything with processing — Python scripts, Spark, dockerized apps, orchestration and observability.*
+Conclusion
 
-## Storage
-*Where the data lands — OLAP and OLTP databases, data lakes and lakehouses.*
+Project Overview & Requirements
 
-## Visualization
-*How people and systems consume the data — apps, dashboards, BI tools and, of course, APIs for clients.*
+Explain what the robotic arm/gripper is intended to do.
 
-# Pipelines
+Explain the overall mechanical layout and the number of joints or degrees of freedom.
 
-- Explain the pipelines you built
-- Go through your development and link to the source code in `/sources`
+State what movements or tasks the current version is designed to perform.
 
-Link to the files, do not paste the whole pipeline in here. The code already lives in the repo and a README that turns into a code dump stops being readable. Short snippets to show one interesting bit are good.
+State the current project status: CAD-only, partially manufactured, assembled, electronically controlled, tested, or still in development.
 
-Say what the pipeline does when something goes wrong. Retries, what happens to a bad record, whether the job fails loudly or writes garbage quietly. This is the part people forget and it is exactly the part that separates a project from a tutorial.
+List the main functional requirements. Examples could include joint range of motion, gripping ability, overall size, ease of assembly, controllability or cost.
 
-## Stream Processing
-## Batch Processing
-## Visualizations
+For each important requirement, say how you will prove that it has been met.
 
-# Demo
+Key Engineering Numbers
 
-- Add a demo video here
-- Or link to your presentation video of the project
+Show the numbers that explain your design choices. Do not add calculations just for the sake of having calculations; use them where they answer an engineering question.
 
-A two minute screen recording of the thing actually running does more than three paragraphs. A repo with no visible output is hard to tell apart from a repo that never worked.
+Overall dimensions and approximate mass of the arm/gripper.
 
-# What Breaks
+Joint ranges of motion in degrees.
 
-Three or four honest points. What you chose not to solve, what falls over if the data grows, and what you would change if you built it again.
+Target or tested load at the gripper, if applicable.
 
-You already have your volume numbers, so multiply them and say what breaks first. You do not have to fix it. Knowing where the ceiling is beats pretending there isn't one.
+Actuator torque requirement or available servo torque, where relevant.
 
-- **[What breaks first]** [At what point, and what you would do about it]
-- **[What you deliberately skipped]** [Why it was not worth it at this size]
-- **[Risk you accepted]** [What happens if it hits, and why you decided to live with it]
+Lever arm distances used when estimating joint torque.
 
-Deciding which risks to ignore is the part that only someone who has shipped something can do. Anyone can list risks.
+Clearances used between mating or rotating parts.
 
-If your data touches people, add one honest paragraph on it. One paragraph, not a compliance chapter. If there is nothing personal in the data, one line saying you checked is also a fine answer.
+Estimated or measured current demand for the servos and controller.
 
-# Conclusion
+Manufacturing cost, print mass or material usage if these affected the design.
+
+For example, if actuator torque affected a design decision, show the load, distance from the joint and the resulting torque estimate. If power affected the electronics, show the expected current demand. A number gives the tool or component choice something to point at.
+
+Constraints
+
+What you had to work with. Be straight about it; this is not an apology. Constraints are often the reason the final design looks the way it does.
+
+Budget: [what you were willing or able to spend, and what this stopped you manufacturing or buying]
+
+Time: [the project window and any deadlines]
+
+Hardware: [available laptop, Arduino, servo motors, power supply, tools, etc.]
+
+Manufacturing: [printer access, build volume, material, minimum feature size, support requirements, outsourced printing, etc.]
+
+Geometry / packaging: [overall size, joint clearances, actuator mounting space, cable routing]
+
+Safety / reliability: [pinch points, current limits, load limits, acceptable test conditions]
+
+"I could not manufacture every part within the available budget, so CAD motion studies and simulations were used to develop the unmanufactured sections" is useful engineering context. It explains a decision instead of hiding it.
+
+Used Tools & Components
+
+Explain which tools, components and processes you used and why.
+
+Explain how they work at the level needed to understand your project; do not turn the README into a textbook.
+
+Explain how you set them up or used them in this project.
+
+For important choices, state what alternative you considered and why you rejected it.
+
+A choice with an alternative beside it is much stronger than a choice on its own. "I used a servo motor" says what you bought. "I chose a servo because position control was simple and compact for this prototype; a DC motor would have required additional sensing and control" explains an engineering decision.
+
+CAD & Mechanical Design
+
+PTC Creo / CAD software used: [what you used and why]
+
+Overall assembly: [number of parts, subassemblies, joints and degrees of freedom]
+
+Key mechanisms: [hinges, linkages, gripper, brackets, rotating joints, etc.]
+
+Motion / mechanism analysis: [what movement you checked and what it told you]
+
+Engineering drawings: [which parts or interfaces needed drawings and why]
+
+Design trade-offs: [strength vs weight, stiffness vs material, complexity vs manufacturability, range of motion vs packaging]
+
+Alternative designs considered: [what you rejected and why]
+
+Actuation, Electronics & Control
+
+Microcontroller: [model, role and why it was suitable]
+
+Actuators: [servo / motor type, number used, torque or range where relevant]
+
+User input: [potentiometer, buttons, software input, etc.]
+
+Power: [how the controller and servos are powered and why]
+
+Wiring: [signal, power and common-ground arrangement]
+
+Control logic: [input is read -> converted to target position -> actuator command is sent -> physical response is checked]
+
+Limits / protection: [software angle limits, safe start position, external power, current considerations, etc.]
+
+Link to the source code rather than pasting the entire program into the README. A short snippet is fine only if it shows something worth explaining.
+
+Manufacturing & Prototyping
+
+Explain which parts were physically manufactured and which remained CAD-only.
+
+State the manufacturing process and material for the parts that were made.
+
+Explain how manufacturing limitations changed the geometry.
+
+Discuss wall thickness, weak features, supports, print orientation or other manufacturing concerns where relevant.
+
+Explain how parts are assembled and disassembled: pins, bolts, shafts, press fits, clearances, etc.
+
+State any reprints or remanufactured parts and exactly what changed between versions.
+
+Include the approximate bill of materials and total project cost if cost influenced decisions.
+
+Version Control & Documentation
+
+Explain how GitHub is used to organise the project.
+
+Keep CAD exports, code, images, videos and documentation in clearly named folders.
+
+Use the README to explain the project; do not use it as a dump for every file or every line of code.
+
+Where useful, link directly to the relevant CAD export, drawing, code file, test video or image.
+
+If the project has clear revisions, label them so an employer can see how the design changed over time.
+
+Design Development & Iteration
+
+Explain how the project developed from the first concept to the current version.
+
+For each important revision, explain the problem, the evidence, the change you made and the outcome.
+
+Show at least one decision that came from a physical build or test rather than from appearance alone.
+
+Where a design did not work as intended, explain why. A failed or imperfect version is useful if it led to a justified engineering change.
+
+Link to the relevant CAD revision, image, measurement or test evidence instead of describing everything from memory.
+
+This is the section that separates a developed engineering project from a single finished CAD model. The reader should be able to see a chain of evidence: observation -> reasoning -> design change -> result.
+
+Tolerances, Fits & Interfaces
+
+State the nominal dimensions of important mating parts.
+
+State the clearance or interference you intended.
+
+Explain what happened on the first manufactured fit: too tight, too loose, misaligned, acceptable, etc.
+
+State the dimension or clearance change made for the next revision.
+
+State whether the change solved the problem and what you learned from it.
+
+Use actual numbers wherever possible. "The fit was improved" is weak; "the bore was increased from X mm to Y mm after the first print bound on the shaft" is evidence.
+
+Testing & Validation
+
+Explain what you tested and why the test mattered.
+
+State the method you used.
+
+State the target or expected result before giving the result.
+
+State the measured or observed result.
+
+State the engineering decision that followed: pass, accept limitation, adjust, redesign or test again.
+
+Useful tests for this type of project may include joint range of motion, gripper function, fit and assembly, repeated servo movement, power behaviour, load capacity, deflection or a CAD/simulation check. Only include tests that actually answer a project requirement.
+
+When something goes wrong, say what the system does or what you do next. For example: a joint binds, a servo reaches its torque limit, the power supply cannot support simultaneous movement, or a printed part flexes. Explain how the problem is detected and how the design is changed or limited.
+
+Demo
+
+Add a short demonstration video here when you are ready.
+
+Or link to a presentation / project video in the repository.
+
+State exactly what the viewer is seeing: which joints move, what input is being used, what object is being gripped, and whether the video shows the final or an intermediate revision.
+
+A short video of the physical system actually moving can do more than several paragraphs. It gives the reader immediate evidence that the mechanism, electronics and control have been brought together.
+
+What Breaks / Current Limitations
+
+Three or four honest points. What did you choose not to solve, what reaches its limit first, and what would you change if you built the next version?
+
+[Mechanical limit] [At what load, angle, geometry or condition it becomes a problem, and what you would do about it]
+
+[Tolerance / backlash / flex issue] [When it matters and the next design change]
+
+[Power / actuator limitation] [What happens and why you accepted it for this prototype]
+
+[What you deliberately did not manufacture or validate] [Why it was not worth doing at this stage]
+
+[Risk you accepted] [What happens if it occurs, and why you decided to live with it]
+
+You do not have to fix every limitation before publishing the project. Knowing where the current design stops being reliable is stronger than pretending there is no ceiling.
+
+Future Development
+
+Near-term mechanical improvement: [the next change that directly addresses a current limitation]
+
+Near-term control / electronics improvement: [additional actuator, sensor, power system, control method, etc.]
+
+Additional testing: [what still needs to be measured or validated]
+
+Longer-term development: [AI-assisted control, computer vision, autonomous object detection or other features if you genuinely intend to explore them]
+
+Keep the future section tied to the current project. The next step should solve something that the present prototype cannot yet do, rather than becoming a wish list of unrelated technology.
+
+Repository Structure
+
+/CAD - Creo parts, assemblies, drawings and exported files
+
+/Code - Arduino / control code and any supporting scripts
+
+/Images - CAD renders, build photos and test evidence
+
+/Videos - motion and control demonstrations
+
+/Docs - optional BOM, drawings, test notes or portfolio material
+
+README.md - the clear project story: goals, decisions, evidence, results, limitations and next steps
+
+Only create folders you actually need. The point is to make the project easy to navigate, not to make the repository look artificially complicated.
+
+Conclusion
 
 Write a comprehensive conclusion.
 
-- How did this project turn out
-- What major things have you learned
-- What were the biggest challenges
+How did the project turn out compared with the goals at the top?
 
-Then go back up to the introduction and paste the short version of this into the executive summary.
+What major engineering decisions made the biggest difference?
 
-Make the lessons specific. "I would add more tests" says nothing because everyone writes it. "I partitioned by ingest date and should have partitioned by event date, because every query I actually write filters on event date and now they all scan everything" says you went back and looked at your own work.
+What did the physical prototype or testing teach you that CAD alone did not?
 
-(https://github.com/andkret/Cookbook)
+What were the biggest challenges?
+
+What would you change if you started the project again?
+
+Then go back to the introduction and add the short version of this outcome to the opening summary.
+
+Make the lessons specific. "I would improve the tolerances" says very little. "The first printed joint bound because the mating dimensions did not include enough manufacturing clearance, so I increased the clearance by X mm on the next revision" shows that you reviewed your own work and changed the design because of evidence.
+
+Before Publishing - Delete This Section From the Final README
+
+Can someone understand what the project does without opening the CAD files?
+
+Does every major design claim have evidence: a number, test, drawing, image or linked file?
+
+Have you explained why important components and tools were chosen?
+
+Have you shown at least one alternative that you considered and rejected?
+
+Do the constraints explain decisions caused by budget, time, hardware or manufacture?
+
+Have you shown at least one meaningful design iteration?
+
+Do the tests map back to the original goals or requirements?
+
+Are large code blocks and file dumps replaced with links and short explanations?
+
+Does the limitations section state real current boundaries?
+
+Are future improvements connected to those limitations?
+
+Are units, dimensions, names and terminology consistent throughout?
