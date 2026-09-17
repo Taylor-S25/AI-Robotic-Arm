@@ -124,7 +124,7 @@ Key mechanisms: Gripper assembly, small arm, medium arm, large arm, base joint, 
 
 Motion / mechanism analysis: Checked rotary motion at each joint, at extreme angles there were limits but this was a desired outcome to avoid clashing.
 
-Engineering drawings: All the [3D printing parts](3D%20priniting%20parts/) needed drawing due to tolerancing required for smooth connections when 3D printing.
+Engineering drawings: All the [3D printing parts](3D%20printing%20parts/) needed drawing due to tolerancing required for smooth connections when 3D printing.
 
 Design trade-offs: To ensure that the members were as light as possible, for smoother servomotor control, this involved removing as much material as possible making the parts weaker. However, this made the cost to print cheaper saving money. 
 
