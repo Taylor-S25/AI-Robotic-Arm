@@ -102,15 +102,12 @@ Safety / reliability: Safety and reliability limits involved the circuitry not b
 
 ## Used Tools & Components
 
-Explain which tools, components and processes you used and why.
-
-Explain how they work at the level needed to understand your project; do not turn the README into a textbook.
-
-Explain how you set them up or used them in this project.
-
-For important choices, state what alternative you considered and why you rejected it.
-
-A choice with an alternative beside it is much stronger than a choice on its own. "I used a servo motor" says what you bought. "I chose a servo because position control was simple and compact for this prototype; a DC motor would have required additional sensing and control" explains an engineering decision.
+- PTC Creo was used for CAD as I already knew how to use this software. Creo covers modelling, assemblies and drawings in one place making it a good choice for the robotic arms design. An alternative I thought about using was SolidWorks as I have experience with this software but haven’t used it in 2 years hence, I chose Creo.
+- 3D printing was used to physically manifest parts. This went hand in hand with my CAD modelling as I could copy the designs into STL files used for quick and easy printing. Making it the strongest option. An alternative I thought about was cutting foam using a hot wire cutter, but this wouldn’t have been passive work and would have taken up a lot of time meaning I could have fallen behind schedule.
+- Arduino was used for driving the servomotors when an input was given to the potentiometers. This allowed me to control the rotation of the robotic arm’s members. Components were connected via wiring through a breadboard. An alternative I thought about using was a Raspberry Pi, but this was far too complex than what I needed.
+- Servomotors were used for controlling the members of the robotic arm. These were connected to each member via metal rods. An alternative I thought about using was a DC motor, but its torque was too low.
+- GitHub was used to document my project as it provided branching which allowed me to update my progress without affecting the main database until I was ready.
+- Velxio was a simulator I used for designing my circuitry before I assembled it physically. This helped me to design it physically
 
 ## CAD & Mechanical Design
 
