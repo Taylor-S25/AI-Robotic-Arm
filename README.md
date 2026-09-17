@@ -154,7 +154,7 @@ safety limits: servomotors were placed inside members to prevent damage and serv
 As there were so many parts to print, this would have cost a lot of money, hence I could only print the main parts of the robotic arm. This excluded bearings and rods as well as the gripper head.  The gripper head was very intricate and would have taken a lot of time and resources to print, so I simulated it instead. Manufacturing limitations led to me altering the original parts making them easier to 3D print. As hovering displayed in the initial designs would have caused the software to produce lots of supports causing rough surfaces and greater friction reducing smooth servo control. 
 
 Parts were assembled and disassembled due to panels pinned at each joint which ensured the members stayed connected. Each connection point had a tolerance of ± 0.4mm so everything attached smoothly. On my first print of the Robotic arm failed to integrate this, hence reprints were done. The cost for this was around about £20 worth of materials for both sets of prints. 
-![Initial 3D print](Images/Initial%203D%20%print.jpeg)
+![Initial 3D print](Images/Initial%203D%20print.jpeg)
 
 
 ## Version Control & Documentation
