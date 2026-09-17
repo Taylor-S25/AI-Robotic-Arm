@@ -103,23 +103,28 @@ Safety / reliability: Safety and reliability limits involved the circuitry not b
 ## Used Tools & Components
 
 - PTC Creo was used for CAD as I already knew how to use this software. Creo covers modelling, assemblies and drawings in one place making it a good choice for the robotic arms design. An alternative I thought about using was SolidWorks as I have experience with this software but haven’t used it in 2 years hence, I chose Creo.
+ 
 - 3D printing was used to physically manifest parts. This went hand in hand with my CAD modelling as I could copy the designs into STL files used for quick and easy printing. Making it the strongest option. An alternative I thought about was cutting foam using a hot wire cutter, but this wouldn’t have been passive work and would have taken up a lot of time meaning I could have fallen behind schedule.
+  
 - Arduino was used for driving the servomotors when an input was given to the potentiometers. This allowed me to control the rotation of the robotic arm’s members. Components were connected via wiring through a breadboard. An alternative I thought about using was a Raspberry Pi, but this was far too complex than what I needed.
+  
 - Servomotors were used for controlling the members of the robotic arm. These were connected to each member via metal rods. An alternative I thought about using was a DC motor, but its torque was too low.
+  
 - GitHub was used to document my project as it provided branching which allowed me to update my progress without affecting the main database until I was ready.
+  
 - Velxio was a simulator I used for designing my circuitry before I assembled it physically. This helped me to design it physically
 
 ## CAD & Mechanical Design
 
-PTC Creo / CAD software used: [what you used and why]
+CAD software used: PTC Creo, was used as it was the software I have the most expirience with. 
 
-Overall assembly: [number of parts, subassemblies, joints and degrees of freedom]
+Overall assembly: The Over all assembly features around 20+ parts with some parts being used more than once. Two assemblies were created the gripper head and the Robotic arm. The mechanism had 5 degrees of freedom. 
 
-Key mechanisms: [hinges, linkages, gripper, brackets, rotating joints, etc.]
+Key mechanisms: Gripper assembly, small arm, medium arm, large arm, base joint, base plate
 
 Motion / mechanism analysis: [what movement you checked and what it told you]
 
-Engineering drawings: [which parts or interfaces needed drawings and why]
+Engineering drawings: All the [3D printing parts](3D-priniting-parts) needed drawing due to tolerancing required for smooth connections when 3D printing.
 
 Design trade-offs: [strength vs weight, stiffness vs material, complexity vs manufacturability, range of motion vs packaging]
 
