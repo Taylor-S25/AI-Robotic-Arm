@@ -122,9 +122,9 @@ Overall assembly: The Over all assembly features around 20+ parts with some part
 
 Key mechanisms: Gripper assembly, small arm, medium arm, large arm, base joint, base plate
 
-Motion / mechanism analysis: [what movement you checked and what it told you]
+Motion / mechanism analysis: Checked rotary motion at each joint, at extreme angles there were limits but this was a desired outcome to avoid clashing.
 
-Engineering drawings: All the [3D printing parts](3D-priniting-parts) needed drawing due to tolerancing required for smooth connections when 3D printing.
+Engineering drawings: All the [3D printing parts](3D%20priniting%20parts/) needed drawing due to tolerancing required for smooth connections when 3D printing.
 
 Design trade-offs: [strength vs weight, stiffness vs material, complexity vs manufacturability, range of motion vs packaging]
 
