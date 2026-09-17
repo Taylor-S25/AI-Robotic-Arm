@@ -126,11 +126,11 @@ Motion / mechanism analysis: Checked rotary motion at each joint, at extreme ang
 
 Engineering drawings: All the [3D printing parts](3D%20priniting%20parts/) needed drawing due to tolerancing required for smooth connections when 3D printing.
 
-Design trade-offs: [strength vs weight, stiffness vs material, complexity vs manufacturability, range of motion vs packaging]
+Design trade-offs: To ensure that the members were as light as possible, for smoother servomotor control, this involved removing as much material as possible making the parts weaker. However, this made the cost to print cheaper saving money. 
 
-Alternative designs considered: [what you rejected and why]
+Alternative designs considered: Only using a 2 member design was something I had considered as it made the design more simplistic and cheap. However this reduced the robotic arms reach making it less practical. Therefore, I gave the design 3 members. For the gripper head I thought about using gears but this seemed too complicated for the design so I stuck with servo driven motion. 
 
-Actuation, Electronics & Control
+## Actuation, Electronics & Control
 
 Microcontroller: [model, role and why it was suitable]
 
