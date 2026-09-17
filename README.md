@@ -143,7 +143,7 @@ Power: The circuitry was powered via my laptop and a booster I bought to prevent
 Wiring: Standard ELEGO male-male wiring was used to connect each component to the breadboard
 
 Control logic: Input (potentiometer is turned), microcontroller (ELEGO processes input to produce the required output using code), Output (servomotor rotates)
-[Physical Arduino-servo motion](Physical%20and%20software%20simulations/Physical%20Arduino-servo%20motion.mp4)
+[Watch physical Arduino-servo simulation](Physical%20and%20software%20simulations/Physical%20Arduino-servo%20motion.mp4)
 
 safety limits: servomotors were placed inside members to prevent damage and servo-rotation was limited to prevent collisions.
 
@@ -151,19 +151,11 @@ safety limits: servomotors were placed inside members to prevent damage and serv
 
 ## Manufacturing & Prototyping
 
-Explain which parts were physically manufactured and which remained CAD-only.
+As there were so many parts to print, this would have cost a lot of money, hence I could only print the main parts of the robotic arm. This excluded bearings and rods as well as the gripper head.  The gripper head was very intricate and would have taken a lot of time and resources to print, so I simulated it instead. Manufacturing limitations led to me altering the original parts making them easier to 3D print. As hovering displayed in the initial designs would have caused the software to produce lots of supports causing rough surfaces and greater friction reducing smooth servo control. 
 
-State the manufacturing process and material for the parts that were made.
+Parts were assembled and disassembled due to panels pinned at each joint which ensured the members stayed connected. Each connection point had a tolerance of ± 0.4mm so everything attached smoothly. On my first print of the Robotic arm failed to integrate this, hence reprints were done. The cost for this was around about £20 worth of materials for both sets of prints. 
+![Initial 3D print](Images/Initial%20sketch%20before%20CAD.jpg)
 
-Explain how manufacturing limitations changed the geometry.
-
-Discuss wall thickness, weak features, supports, print orientation or other manufacturing concerns where relevant.
-
-Explain how parts are assembled and disassembled: pins, bolts, shafts, press fits, clearances, etc.
-
-State any reprints or remanufactured parts and exactly what changed between versions.
-
-Include the approximate bill of materials and total project cost if cost influenced decisions.
 
 ## Version Control & Documentation
 
