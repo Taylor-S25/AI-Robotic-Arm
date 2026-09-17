@@ -132,21 +132,22 @@ Alternative designs considered: Only using a 2 member design was something I had
 
 ## Actuation, Electronics & Control
 
-Microcontroller: [model, role and why it was suitable]
+Microcontroller: ELEGO UNOR3 - its role was to turn code into a set of instructions between the potentiometer and the servomotor causing motion. This was suitable as it provided enough voltage and amplitude for the job.
 
-Actuators: [servo / motor type, number used, torque or range where relevant]
+Actuators: Used standard hobby servomotor model S3003 for simple motion control
 
-User input: [potentiometer, buttons, software input, etc.]
+User input: Turning Potentiometer 
 
-Power: [how the controller and servos are powered and why]
+Power: The circuitry was powered via my laptop and a booster I bought to prevent the microcontroller's fuse from blowing
 
-Wiring: [signal, power and common-ground arrangement]
+Wiring: Standard ELEGO male-male wiring was used to connect each component to the breadboard
 
-Control logic: [input is read -> converted to target position -> actuator command is sent -> physical response is checked]
+Control logic: Input (potentiometer is turned), microcontroller (ELEGO processes input to produce the required output using code), Output (servomotor rotates)
+[Physical Arduino-servo motion](Physical%20and%20software%20simulations/Physical%20Arduino-servo%20motion.mp4)
 
-Limits / protection: [software angle limits, safe start position, external power, current considerations, etc.]
+safety limits: servomotors were placed inside members to prevent damage and servo-rotation was limited to prevent collisions.
 
-Link to the source code rather than pasting the entire program into the README. A short snippet is fine only if it shows something worth explaining.
+[AI Arduino source code](Physical%20and%20software%20simulations/sketch.ino)  
 
 ## Manufacturing & Prototyping
 
