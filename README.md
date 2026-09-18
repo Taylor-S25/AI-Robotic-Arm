@@ -42,7 +42,7 @@ Early concept sketch showing arm structure joint movement and gripper mechanism.
   - [Manufacturing & Prototyping](#Manufacturing--Prototyping)
   - [Version Control & Documentation](#Version-Control--Documentation)
 - [Design Development & Iteration](#Design-Development--Iteration)
-  - [Tolerances, Fits & Interfaces](#Tolerancing--Fits--Interfaces)
+  - [Tolerances, Fits & Interfaces](#Tolerances--Fits--Interfaces)
 - [Testing & Validation](#Testing--Validation)
 - [Demo](#Demo)
 - [What Breaks / Current Limitations](#What-Breaks--Current-Limitations)
