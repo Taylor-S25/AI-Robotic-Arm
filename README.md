@@ -174,17 +174,7 @@ Each edit caused by pushing new material to the origin was apart of my iterative
 
 ## Tolerances, Fits & Interfaces
 
-State the nominal dimensions of important mating parts.
-
-State the clearance or interference you intended.
-
-Explain what happened on the first manufactured fit: too tight, too loose, misaligned, acceptable, etc.
-
-State the dimension or clearance change made for the next revision.
-
-State whether the change solved the problem and what you learned from it.
-
-Use actual numbers wherever possible. "The fit was improved" is weak; "the bore was increased from X mm to Y mm after the first print bound on the shaft" is evidence.
+Initially all the connected parts for the Robotic arm had no clearance. Using a clearance was something I probably should have thought about in the initial 3D print. This meant that the first print was too tight causing a lot of friction stopping smooth servomotor control. This led to me to modify CAD parts for manufacturing purposes. This involved removing material for light weight and cost and using a clearance of ±0.4mm. This made it easier for the servomotors to move and lift the adjacent material. This helped me to learn that every time you design something, a tolerance should always be used in manufacture, otherwise components may not fit together as designed.
 
 ## Testing & Validation
 
