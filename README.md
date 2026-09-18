@@ -147,6 +147,7 @@ Control logic: Input (potentiometer is turned), microcontroller (ELEGO processes
 [Watch physical Arduino-servo simulation](Physical%20and%20software%20simulations/Physical%20Arduino-servo%20motion.mp4)
 
 safety limits: servomotors were placed inside members to prevent damage and servo-rotation was limited to prevent collisions.
+
 [AI Arduino source code](Physical%20and%20software%20simulations/sketch.ino)  
 ![Velxio simulation](Images/Velxio%20simulation%20.jpg)
 
@@ -185,13 +186,9 @@ Furthermore, I used non-destructive testing to assess the gripper head this was 
 
 ## Demo
 
-Add a short demonstration video here when you are ready.
+This is a demo of the final product it shows me moving two of the robotic arms members using potentiometers and servomotors connected via a breadboard and microcontroller. This was were my robotic arm cam to life!
 
-Or link to a presentation / project video in the repository.
-
-State exactly what the viewer is seeing: which joints move, what input is being used, what object is being gripped, and whether the video shows the final or an intermediate revision.
-
-A short video of the physical system actually moving can do more than several paragraphs. It gives the reader immediate evidence that the mechanism, electronics and control have been brought together.
+[Robotic Arm Project Final Demonstation](Physical%20and%20software%20simulations/Robotic%20Arm%20Project%20Final%20Demonstation.mp4)
 
 ## What Breaks / Current Limitations
 
