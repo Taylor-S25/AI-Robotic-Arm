@@ -188,7 +188,7 @@ Furthermore, I used non-destructive testing to assess the gripper head this was 
 
 This is a demo of the final product it shows me moving two of the robotic arms members using potentiometers and servomotors connected via a breadboard and microcontroller. This was were my robotic arm cam to life!
 
-[Robotic Arm Project Final Demonstation](Physical%20and%20software%20simulations/Robotic%20Arm%20Project%20Final%20Demonstration.mp4)
+[Watch Robotic Arm Project Final Demonstration](Physical%20and%20software%20simulations/Robotic%20Arm%20Project%20Final%20Demonstration.mp4)
 
 ## What Breaks / Current Limitations
 
