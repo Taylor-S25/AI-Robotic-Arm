@@ -160,29 +160,17 @@ Parts were assembled and disassembled due to panels pinned at each joint which e
 
 ## Version Control & Documentation
 
-Explain how GitHub is used to organise the project.
+Explain how GitHub is used to organise the project. GitHub has been the central place for where I have organised all my work. I have structured files for CAD, 3D printing, Images, modifications and simulations. I have used the README to explain, what I did in the project as well as how and why for a plethora of decisions.
 
-Keep CAD exports, code, images, videos and documentation in clearly named folders.
+STL files modified for 3D printing can be found [here](3D%20printing%20parts/)
+CAD parts and assemblies can be found in the working directory [here](Creo%20project/)
+Images documenting the project can be found [here](Images/)
+Modified Parts for clearance, cost and weigh can be found [here](Modified%20parts%20for%20tolerances/)
+Simulations for CAD, Arduino and the final product can be found [here](Physical%20and%20software%20simulations/)
 
-Use the README to explain the project; do not use it as a dump for every file or every line of code.
+By using branches I updated a copy of the main repository. This allowed me to edit my README and filing by adding or deleting things. If I liked the work I completed with this branch, I could then merge it with the original to make it the main branch. If I didn't I could then discard the branch whilst keeping the initial main the same.
 
-Where useful, link directly to the relevant CAD export, drawing, code file, test video or image.
-
-If the project has clear revisions, label them so an employer can see how the design changed over time.
-
-Design Development & Iteration
-
-Explain how the project developed from the first concept to the current version.
-
-For each important revision, explain the problem, the evidence, the change you made and the outcome.
-
-Show at least one decision that came from a physical build or test rather than from appearance alone.
-
-Where a design did not work as intended, explain why. A failed or imperfect version is useful if it led to a justified engineering change.
-
-Link to the relevant CAD revision, image, measurement or test evidence instead of describing everything from memory.
-
-This is the section that separates a developed engineering project from a single finished CAD model. The reader should be able to see a chain of evidence: observation -> reasoning -> design change -> result.
+Each edit caused by pushing new material to the origin was apart of my iterative design and if you go to my profile you can see all of the tweaks I made to this project throughout its life.
 
 ## Tolerances, Fits & Interfaces
 
