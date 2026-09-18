@@ -188,19 +188,9 @@ Use actual numbers wherever possible. "The fit was improved" is weak; "the bore 
 
 ## Testing & Validation
 
-Explain what you tested and why the test mattered.
+Testing was completed non-destructively. Non-destructively the objective was to see if the project could rotate at least 60 degrees, this was mentioned at the start in my goals. To measure this I used a protractor the arm manage to move around 64 degrees and couldn't move any further. A limitation was the servomotors as they could only rotate 180 degrees. If I had to do the test again i would have used a different type of servomotor that could move 360 degrees. Hence each member would have been able to rotate further.
 
-State the method you used.
-
-State the target or expected result before giving the result.
-
-State the measured or observed result.
-
-State the engineering decision that followed: pass, accept limitation, adjust, redesign or test again.
-
-Useful tests for this type of project may include joint range of motion, gripper function, fit and assembly, repeated servo movement, power behaviour, load capacity, deflection or a CAD/simulation check. Only include tests that actually answer a project requirement.
-
-When something goes wrong, say what the system does or what you do next. For example: a joint binds, a servo reaches its torque limit, the power supply cannot support simultaneous movement, or a printed part flexes. Explain how the problem is detected and how the design is changed or limited.
+Furthermore, I used non-destructive testing to assess the gripper head this was using CAD software as I couldn't 3D print the gripper. The objective was to use a servomotor to get the jaws of the gripper head to [open and close](Physical%20and%20software%20simulations/CAD%20gripper%20servo%20motor%20simulation.mp4).The result was that the gripper could [open and close](Physical%20and%20software%20simulations/CAD%20Gripper%20simulation.mp4) prefectly. A limitation of this is that I couldn't produce it physically hence I don't know truly if it would work. Therefore, if I had to do redo the project I would get more funding to print out the gripper. 
 
 ## Demo
 
