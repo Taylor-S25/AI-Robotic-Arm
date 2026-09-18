@@ -162,11 +162,11 @@ Parts were assembled and disassembled due to panels pinned at each joint which e
 
 Explain how GitHub is used to organise the project. GitHub has been the central place for where I have organised all my work. I have structured files for CAD, 3D printing, Images, modifications and simulations. I have used the README to explain, what I did in the project as well as how and why for a plethora of decisions.
 
-STL files modified for 3D printing can be found [here](3D%20printing%20parts/)
-CAD parts and assemblies can be found in the working directory [here](Creo%20project/)
-Images documenting the project can be found [here](Images/)
-Modified Parts for clearance, cost and weigh can be found [here](Modified%20parts%20for%20tolerances/)
-Simulations for CAD, Arduino and the final product can be found [here](Physical%20and%20software%20simulations/)
+- STL files modified for 3D printing can be found [here](3D%20printing%20parts/)
+- CAD parts and assemblies can be found in the working directory [here](Creo%20project/)
+- Images documenting the project can be found [here](Images/)
+- Modified Parts for clearance, cost and weigh can be found [here](Modified%20parts%20for%20tolerances/)
+- Simulations for CAD, Arduino and the final product can be found [here](Physical%20and%20software%20simulations/)
 
 By using branches I updated a copy of the main repository. This allowed me to edit my README and filing by adding or deleting things. If I liked the work I completed with this branch, I could then merge it with the original to make it the main branch. If I didn't I could then discard the branch whilst keeping the initial main the same.
 
