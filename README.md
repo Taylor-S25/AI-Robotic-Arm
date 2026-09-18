@@ -148,7 +148,7 @@ Control logic: Input (potentiometer is turned), microcontroller (ELEGO processes
 
 safety limits: servomotors were placed inside members to prevent damage and servo-rotation was limited to prevent collisions.
 [AI Arduino source code](Physical%20and%20software%20simulations/sketch.ino)  
-![Velxio simulation](Images/Velxio%20simulation.jpg)
+![Velxio simulation](Images/Velxio%20simulation%20.jpg)
 
 ## Manufacturing & Prototyping
 
