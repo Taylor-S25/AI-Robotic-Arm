@@ -119,7 +119,7 @@ Safety / reliability: Safety and reliability limits involved the circuitry not b
 CAD software used: PTC Creo, was used as it was the software I have the most expirience with. 
 
 Overall assembly: The Over all assembly features around 20+ parts with some parts being used more than once. Two assemblies were created the gripper head and the Robotic arm. The mechanism had 5 degrees of freedom. 
-![CAD Assembly](Images/CAD%20finshed%20assembly.jpg)
+![CAD Assembly](Images/CAD%20finished%20assembly.jpg)
 
 Key mechanisms: Gripper assembly, small arm, medium arm, large arm, base joint, base plate
 
