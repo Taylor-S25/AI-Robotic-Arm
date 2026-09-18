@@ -42,7 +42,7 @@ Early concept sketch showing arm structure joint movement and gripper mechanism.
   - [Manufacturing & Prototyping](#Manufacturing--Prototyping)
   - [Version Control & Documentation](#Version-Control--Documentation)
 - [Design Development & Iteration](#Design-Development--Iteration)
-  - [Tolerances, Fits & Interfaces](#Tolerancing-Fits--Interfaces)
+  - [Tolerances, Fits & Interfaces](#tolerances-fits--interfaces)
 - [Testing & Validation](#Testing--Validation)
 - [Demo](#Demo)
 - [What Breaks / Current Limitations](#What-Breaks--Current-Limitations)
@@ -119,6 +119,7 @@ Safety / reliability: Safety and reliability limits involved the circuitry not b
 CAD software used: PTC Creo, was used as it was the software I have the most expirience with. 
 
 Overall assembly: The Over all assembly features around 20+ parts with some parts being used more than once. Two assemblies were created the gripper head and the Robotic arm. The mechanism had 5 degrees of freedom. 
+![CAD Assembly](Images/CAD%20finished%20assembly.jpg)
 
 Key mechanisms: Gripper assembly, small arm, medium arm, large arm, base joint, base plate
 
@@ -160,59 +161,27 @@ Parts were assembled and disassembled due to panels pinned at each joint which e
 
 ## Version Control & Documentation
 
-Explain how GitHub is used to organise the project.
+Explain how GitHub is used to organise the project. GitHub has been the central place for where I have organised all my work. I have structured files for CAD, 3D printing, Images, modifications and simulations. I have used the README to explain, what I did in the project as well as how and why for a plethora of decisions.
 
-Keep CAD exports, code, images, videos and documentation in clearly named folders.
+- STL files modified for 3D printing can be found [here](3D%20printing%20parts/)
+- CAD parts and assemblies can be found in the working directory [here](Creo%20project/)
+- Images documenting the project can be found [here](Images/)
+- Modified Parts for clearance, cost and weigh can be found [here](Modified%20parts%20for%20tolerances/)
+- Simulations for CAD, Arduino and the final product can be found [here](Physical%20and%20software%20simulations/)
 
-Use the README to explain the project; do not use it as a dump for every file or every line of code.
+By using branches I updated a copy of the main repository. This allowed me to edit my README and filing by adding or deleting things. If I liked the work I completed with this branch, I could then merge it with the original to make it the main branch. If I didn't I could then discard the branch whilst keeping the initial main the same.
 
-Where useful, link directly to the relevant CAD export, drawing, code file, test video or image.
-
-If the project has clear revisions, label them so an employer can see how the design changed over time.
-
-Design Development & Iteration
-
-Explain how the project developed from the first concept to the current version.
-
-For each important revision, explain the problem, the evidence, the change you made and the outcome.
-
-Show at least one decision that came from a physical build or test rather than from appearance alone.
-
-Where a design did not work as intended, explain why. A failed or imperfect version is useful if it led to a justified engineering change.
-
-Link to the relevant CAD revision, image, measurement or test evidence instead of describing everything from memory.
-
-This is the section that separates a developed engineering project from a single finished CAD model. The reader should be able to see a chain of evidence: observation -> reasoning -> design change -> result.
+Each edit caused by pushing new material to the origin was apart of my iterative design and if you go to my profile you can see all of the tweaks I made to this project throughout its life.
 
 ## Tolerances, Fits & Interfaces
 
-State the nominal dimensions of important mating parts.
-
-State the clearance or interference you intended.
-
-Explain what happened on the first manufactured fit: too tight, too loose, misaligned, acceptable, etc.
-
-State the dimension or clearance change made for the next revision.
-
-State whether the change solved the problem and what you learned from it.
-
-Use actual numbers wherever possible. "The fit was improved" is weak; "the bore was increased from X mm to Y mm after the first print bound on the shaft" is evidence.
+Initially all the connected parts for the Robotic arm had no clearance. Using a clearance was something I probably should have thought about in the initial 3D print. This meant that the first print was too tight causing a lot of friction stopping smooth servomotor control. This led to me to modify CAD parts for manufacturing purposes. This involved removing material for light weight and cost and using a clearance of ±0.4mm. This made it easier for the servomotors to move and lift the adjacent material. This helped me to learn that every time you design something, a tolerance should always be used in manufacture, otherwise components may not fit together as designed.
 
 ## Testing & Validation
 
-Explain what you tested and why the test mattered.
+Testing was completed non-destructively. Non-destructively the objective was to see if the project could rotate at least 60 degrees, this was mentioned at the start in my goals. To measure this I used a protractor the arm manage to move around 64 degrees and couldn't move any further. A limitation was the servomotors as they could only rotate 180 degrees. If I had to do the test again i would have used a different type of servomotor that could move 360 degrees. Hence each member would have been able to rotate further.
 
-State the method you used.
-
-State the target or expected result before giving the result.
-
-State the measured or observed result.
-
-State the engineering decision that followed: pass, accept limitation, adjust, redesign or test again.
-
-Useful tests for this type of project may include joint range of motion, gripper function, fit and assembly, repeated servo movement, power behaviour, load capacity, deflection or a CAD/simulation check. Only include tests that actually answer a project requirement.
-
-When something goes wrong, say what the system does or what you do next. For example: a joint binds, a servo reaches its torque limit, the power supply cannot support simultaneous movement, or a printed part flexes. Explain how the problem is detected and how the design is changed or limited.
+Furthermore, I used non-destructive testing to assess the gripper head this was using CAD software as I couldn't 3D print the gripper. The objective was to use a servomotor to get the jaws of the gripper head to [open and close](Physical%20and%20software%20simulations/CAD%20gripper%20servo%20motor%20simulation.mp4).The result was that the gripper could [open and close](Physical%20and%20software%20simulations/CAD%20Gripper%20simulation.mp4) prefectly. A limitation of this is that I couldn't produce it physically hence I don't know truly if it would work. Therefore, if I had to do redo the project I would get more funding to print out the gripper. 
 
 ## Demo
 
