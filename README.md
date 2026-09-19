@@ -17,7 +17,7 @@ Tools, components and manufacturing methods:
 - Arduino, servomotors and potentiometers for motion control
 - GitHub for Project documentation 
 
-*Abstract* Once the project is finished, come back and add a short summary of the final outcome here as well.
+Final outcome: A working robotic gripper assembly with servo motor control. Designed in Creo, tolerance tested through 3D printing iterations, and documented on GitHub
 
 Goal 1: Robotic Arm must achieve mechanical motion 
  Result: The servomotors rotated the elbow joints by at least 60 degrees
@@ -212,42 +212,12 @@ Long-term development: To use AI-assisted control - use and AI to decide whether
 
 ## Conclusion
 
-Write a comprehensive conclusion.
+Overall, this project has provided an opportunity to apply the engineering design process from an initial design to a functional prototype. Looking back at my 3 goals I managed to achieve all of them as I created a robotic gripper which could rotate at least 60 degrees, fabricated a physical prototype and used basic circuitry in the final design.
 
-How did the project turn out compared with the goals at the top?
+Major engineering decisions that made the biggest difference was using a clearance and removing material for a lighter and cheaper product. This iteration allowed me to save money and produce smooth servomotor control and taught me to apply these things straight away for future projects.
 
-What major engineering decisions made the biggest difference?
+Something that the Prototyping taught me that CAD alone did not was that using a clearance in a physical prototype is imperative whereas in a CAD assembly it is not. Hence, always account for real world problems as a stimulatory drawing cannot account for every issue.
 
-What did the physical prototype or testing teach you that CAD alone did not?
+The biggest challenge I faced was using circuitry as I have never been taught mechatronics. Therefore, this was a challenge that taught me a lot about microcontrollers and circuits. Hence, I now feel more confident in using them now and in the future. 
 
-What were the biggest challenges?
-
-What would you change if you started the project again?
-
-Then go back to the introduction and add the short version of this outcome to the opening summary.
-
-Make the lessons specific. "I would improve the tolerances" says very little. "The first printed joint bound because the mating dimensions did not include enough manufacturing clearance, so I increased the clearance by X mm on the next revision" shows that you reviewed your own work and changed the design because of evidence.
-
-Before Publishing - Delete This Section From the Final README
-
-Can someone understand what the project does without opening the CAD files?
-
-Does every major design claim have evidence: a number, test, drawing, image or linked file?
-
-Have you explained why important components and tools were chosen?
-
-Have you shown at least one alternative that you considered and rejected?
-
-Do the constraints explain decisions caused by budget, time, hardware or manufacture?
-
-Have you shown at least one meaningful design iteration?
-
-Do the tests map back to the original goals or requirements?
-
-Are large code blocks and file dumps replaced with links and short explanations?
-
-Does the limitations section state real current boundaries?
-
-Are future improvements connected to those limitations?
-
-Are units, dimensions, names and terminology consistent throughout?
+If I had to start the project again and change something I would give myself a larger time frame and a bigger budget to complete the robotic arm/gripper. As then I might have been able to make the gripper giving the project greater validation. 
