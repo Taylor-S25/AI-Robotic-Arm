@@ -52,42 +52,24 @@ Early concept sketch showing arm structure joint movement and gripper mechanism.
 
 ## Project Overview & Requirements
 
-The Robotic arm/gripper is intended to be able to pick up and move small lightweight objects using servocontrolled motion. The project has been designed to have 4 joint and 5 degrees of freedom. The current version is only has 4 degrees of freedom and 3 joints with the ability to move with servomotor control.
+The Robotic arm/gripper is intended to be able to pick up and move small lightweight objects using servocontrolled motion. The project has been designed to have 4 joint and 5 degrees of freedom. The current version is only has 4 degrees of freedom and 3 joints with the ability to move with servomotor control. The project current stage is fully developed. The Robotic arms requirements are:
 
+- to move at least 60 degrees of motion at each joint
+- to be a physical model
+- to cost no more than £50
+- to use circuitry
+- to be able to pick up and grip objects
+- to have at least 2 degrees of freedom
+- to have appropriate measurements
+- to have appropriate coding
 
-Explain what the robotic arm/gripper is intended to do. 
+I have met the first requirement due to my [final demo](#Demo) which demonstrates that the robotic arm prototype can move 64 degrees. I have also met the second, third and forth requirements as I have 3D printed my robotic arm and have used circuitry such as microcontrollers, servomotors and potentiometers to bring my design to life, whilst keeping under my budget. Requirements 6 and 7 have also been met as the final products shows at least 2 degrees of freedom and appropriate measurements due a clearance of ±0.4mm being used.
 
-Explain the overall mechanical layout and the number of joints or degrees of freedom.
+Requirements I haven't met are 5 and 8 as I didn't have the money to 3D print the robotic gripper head meaning that only a simulation could be shown to display its objected lifting capabilities meaning that This requirement can't be completely validated  
 
-State what movements or tasks the current version is designed to perform.
-
-State the current project status: CAD-only, partially manufactured, assembled, electronically controlled, tested, or still in development.
-
-List the main functional requirements. Examples could include joint range of motion, gripping ability, overall size, ease of assembly, controllability or cost.
 
 For each important requirement, say how you will prove that it has been met.
 
-Key Engineering Numbers
-
-Show the numbers that explain your design choices. Do not add calculations just for the sake of having calculations; use them where they answer an engineering question.
-
-Overall dimensions and approximate mass of the arm/gripper.
-
-Joint ranges of motion in degrees.
-
-Target or tested load at the gripper, if applicable.
-
-Actuator torque requirement or available servo torque, where relevant.
-
-Lever arm distances used when estimating joint torque.
-
-Clearances used between mating or rotating parts.
-
-Estimated or measured current demand for the servos and controller.
-
-Manufacturing cost, print mass or material usage if these affected the design.
-
-For example, if actuator torque affected a design decision, show the load, distance from the joint and the resulting torque estimate. If power affected the electronics, show the expected current demand. A number gives the tool or component choice something to point at.
 
 ## Constraints
 
