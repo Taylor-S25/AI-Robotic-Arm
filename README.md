@@ -41,7 +41,7 @@ Early concept sketch showing arm structure joint movement and gripper mechanism.
   - [Actuation, Electronics & Control](#Actuation-Electronics--Control)
   - [Manufacturing & Prototyping](#Manufacturing--Prototyping)
   - [Version Control & Documentation](#Version-Control--Documentation)
-      - [Repository Structure](#Repositary-Structure)
+      - [Repository Structure](#Repository-Structure)
 - [Design Development & Iteration](#Design-Development--Iteration)
   - [Tolerances, Fits & Interfaces](#tolerances-fits--interfaces)
 - [Testing & Validation](#Testing--Validation)
