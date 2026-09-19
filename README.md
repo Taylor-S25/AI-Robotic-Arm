@@ -52,6 +52,9 @@ Early concept sketch showing arm structure joint movement and gripper mechanism.
 
 ## Project Overview & Requirements
 
+The Robotic arm/gripper is intended to be able to pick up and move small lightweight objects using servocontrolled motion. The project has been designed to have 4 joint and 5 degrees of freedom. The current version is only has 4 degrees of freedom and 3 joints with the ability to move with servomotor control.
+
+
 Explain what the robotic arm/gripper is intended to do. 
 
 Explain the overall mechanical layout and the number of joints or degrees of freedom.
