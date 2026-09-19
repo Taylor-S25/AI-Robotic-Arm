@@ -65,11 +65,7 @@ The Robotic arm/gripper is intended to be able to pick up and move small lightwe
 
 I have met the first requirement due to my [final demo](#Demo) which demonstrates that the robotic arm prototype can move 64 degrees. I have also met the second, third and forth requirements as I have 3D printed my robotic arm and have used circuitry such as microcontrollers, servomotors and potentiometers to bring my design to life, whilst keeping under my budget. Requirements 6 and 7 have also been met as the final products shows at least 2 degrees of freedom and appropriate measurements due a clearance of ±0.4mm being used.
 
-Requirements I haven't met are 5 and 8 as I didn't have the money to 3D print the robotic gripper head meaning that only a simulation could be shown to display its objected lifting capabilities meaning that This requirement can't be completely validated  
-
-
-For each important requirement, say how you will prove that it has been met.
-
+Requirements I haven't met are 5 and 8 as I didn't have the money to 3D print the robotic gripper head meaning that only a simulation could be shown to display its objected lifting capabilities meaning that this requirement can't be completely validated. Therefore if I had to redo the project I would make a physical gripper head to validate this. Another requirement I didn't meet was appropriate coding as I used AI to create this C++ code, I haven't learned how to use C yet although I do know how to use Python and MATLABS. Hence, if I had to redo the project I would learn to use C++ before hand so I could validate this programming as my own.
 
 ## Constraints
 
