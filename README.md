@@ -41,13 +41,13 @@ Early concept sketch showing arm structure joint movement and gripper mechanism.
   - [Actuation, Electronics & Control](#Actuation-Electronics--Control)
   - [Manufacturing & Prototyping](#Manufacturing--Prototyping)
   - [Version Control & Documentation](#Version-Control--Documentation)
+      - [Repository Structure](#Repositary-Structure)
 - [Design Development & Iteration](#Design-Development--Iteration)
   - [Tolerances, Fits & Interfaces](#tolerances-fits--interfaces)
 - [Testing & Validation](#Testing--Validation)
 - [Demo](#Demo)
 - [What Breaks / Current Limitations](#What-Breaks--Current-Limitations)
 - [Future Development](#Future-Development)
-- [Repository Structure](#Repositary-Structure)
 - [Conclusion](#Conclusion)
 
 ## Project Overview & Requirements
@@ -164,11 +164,13 @@ Parts were assembled and disassembled due to panels pinned at each joint which e
 
 Explain how GitHub is used to organise the project. GitHub has been the central place for where I have organised all my work. I have structured files for CAD, 3D printing, Images, modifications and simulations. I have used the README to explain, what I did in the project as well as how and why for a plethora of decisions.
 
+### Repository Structure
 - STL files modified for 3D printing can be found [here](3D%20printing%20parts/)
 - CAD parts and assemblies can be found in the working directory [here](Creo%20project/)
 - Images documenting the project can be found [here](Images/)
 - Modified Parts for clearance, cost and weigh can be found [here](Modified%20parts%20for%20tolerances/)
 - Simulations for CAD, Arduino and the final product can be found [here](Physical%20and%20software%20simulations/)
+- README for the project story: goals, decisions, evidence, results, limitations and next steps can be found [here](README.md)
 
 By using branches I updated a copy of the main repository. This allowed me to edit my README and filing by adding or deleting things. If I liked the work I completed with this branch, I could then merge it with the original to make it the main branch. If I didn't I could then discard the branch whilst keeping the initial main the same.
 
@@ -192,47 +194,21 @@ This is a demo of the final product it shows me moving two of the robotic arms m
 
 ## What Breaks / Current Limitations
 
-Three or four honest points. What did you choose not to solve, what reaches its limit first, and what would you change if you built the next version?
-
-[Mechanical limit] [At what load, angle, geometry or condition it becomes a problem, and what you would do about it]
-
-[Tolerance / backlash / flex issue] [When it matters and the next design change]
-
-[Power / actuator limitation] [What happens and why you accepted it for this prototype]
-
-[What you deliberately did not manufacture or validate] [Why it was not worth doing at this stage]
-
-[Risk you accepted] [What happens if it occurs, and why you decided to live with it]
-
-You do not have to fix every limitation before publishing the project. Knowing where the current design stops being reliable is stronger than pretending there is no ceiling.
+-	One limit I reached was using more than 2 servomotors for the main prototype I would have liked to use 4. However, this would have involved massive changes CAD design and manufacture to allow for the servomotors to be integrated into the base plate and base joints. Hence if I had to produce a 3rd model, I would do that.
+  
+-	Another limit was the gripper head being printed. This would have taken a lot of time and money to produce due to there being so many parts. Hence if I had to produce another prototype, I would have increase my budget and extended my deadlines, to account for a clearance alteration, the time taken and cost to print.
+  
+- Currently nothing destructively breaks but servo motion is limited as there on no slots for the servos to work smoothly with. Theis is due to metal rods connecting the servos to each member become tight. This puts pressure on the servomotors causing them to move themselves as they aren’t fixed. Hence, for my next version I will fix the servos and add a slot in each member for the rods to move in.
 
 ## Future Development
 
-Near-term mechanical improvement: [the next change that directly addresses a current limitation]
+Mechanical improvement: To 3D print the gripper head and attach it to the gripper arm so it looks more like the CAD model
 
-Near-term control / electronics improvement: [additional actuator, sensor, power system, control method, etc.]
+Electronics improvement: To add additional servomotors and using slotting for better servo motion 
 
-Additional testing: [what still needs to be measured or validated]
+Additional testing: To simulate the gripper head physically and not just on CAD.
 
-Longer-term development: [AI-assisted control, computer vision, autonomous object detection or other features if you genuinely intend to explore them]
-
-Keep the future section tied to the current project. The next step should solve something that the present prototype cannot yet do, rather than becoming a wish list of unrelated technology.
-
-## Repository Structure
-
-/CAD - Creo parts, assemblies, drawings and exported files
-
-/Code - Arduino / control code and any supporting scripts
-
-/Images - CAD renders, build photos and test evidence
-
-/Videos - motion and control demonstrations
-
-/Docs - optional BOM, drawings, test notes or portfolio material
-
-README.md - the clear project story: goals, decisions, evidence, results, limitations and next steps
-
-Only create folders you actually need. The point is to make the project easy to navigate, not to make the repository look artificially complicated.
+Long-term development: To use AI-assisted control - use and AI to decide whether the robotic arm should pick something up or not.
 
 ## Conclusion
 
