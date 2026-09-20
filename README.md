@@ -166,6 +166,7 @@ Initially all the connected parts for the Robotic arm had no clearance. Using a 
 Testing was completed non-destructively. Non-destructively the objective was to see if the project could rotate at least 60 degrees, this was mentioned at the start in my goals. To measure this I used a protractor the arm manage to move around 64 degrees and couldn't move any further. A limitation was the servomotors as they could only rotate 180 degrees. If I had to do the test again i would have used a different type of servomotor that could move 360 degrees. Hence each member would have been able to rotate further.
 
 Furthermore, I used non-destructive testing to assess the gripper head this was using CAD software as I couldn't 3D print the gripper. The objective was to use a servomotor to get the jaws of the gripper head to open and close. 
+
 https://github.com/user-attachments/assets/3b3507d3-5217-4580-a304-04e4b8625a54
 
 The result was that the gripper could open and close prefectly. A limitation of this is that I couldn't produce it physically hence I don't know truly if it would work. Therefore, if I had to do redo the project I would get more funding to print out the gripper. 
