@@ -125,7 +125,8 @@ Power: The circuitry was powered via my laptop and a booster I bought to prevent
 Wiring: Standard ELEGO male-male wiring was used to connect each component to the breadboard
 
 Control logic: Input (potentiometer is turned), microcontroller (ELEGO processes input to produce the required output using code), Output (servomotor rotates)
-[Watch physical Arduino-servo simulation](Physical%20and%20software%20simulations/Physical%20Arduino-servo%20motion.mp4)
+### physical Arduino-servo simulation
+https://github.com/user-attachments/assets/86161a06-1482-4143-b839-d0289b86b35f
 
 safety limits: servomotors were placed inside members to prevent damage and servo-rotation was limited to prevent collisions.
 
