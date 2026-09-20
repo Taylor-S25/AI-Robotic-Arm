@@ -98,6 +98,9 @@ Safety / reliability: Safety and reliability limits involved the circuitry not b
   
 - Velxio was a simulator I used for designing my circuitry before I assembled it physically. This helped me to design it physically
 
+[AI Arduino source code](Physical%20and%20software%20simulations/sketch.ino)  
+![Velxio simulation](Images/Velxio%20simulation%20.jpg)
+
 ## CAD & Mechanical Design
 
 CAD software used: PTC Creo, was used as it was the software I have the most expirience with. 
@@ -132,9 +135,6 @@ Control logic: Input (potentiometer is turned), microcontroller (ELEGO processes
 https://github.com/user-attachments/assets/86161a06-1482-4143-b839-d0289b86b35f
 
 safety limits: servomotors were placed inside members to prevent damage and servo-rotation was limited to prevent collisions.
-
-[AI Arduino source code](Physical%20and%20software%20simulations/sketch.ino)  
-![Velxio simulation](Images/Velxio%20simulation%20.jpg)
 
 ## Manufacturing & Prototyping
 
