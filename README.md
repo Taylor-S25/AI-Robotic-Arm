@@ -1,151 +1,213 @@
 # Robotic-Arm/Gripper
-Design and development of an Arduino conrolled enabled robotic arm/gripper 
 
-# Introduction & Goals
+Design and development of an Arduino controlled robotic arm/gripper
 
-Inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. Currently, the main focus is on the CAD development of this project. However, the long term goal is to explore AI assisted control. 
+### Introduction & Goals
 
-- What data are you working with
-- What tools are you using
-- What are you doing with these tools
-- Once you are finished, come back and add the conclusion here as well
+Inspired by Iron Man, this project explores the design of a robotic arm and how it can act as an extra pair of hands for simple tasks. The project combines mechanical design, CAD, prototyping and electronic control, with the long-term goal of exploring AI-assisted control.
 
-Then list your goals. Two or three is plenty. Each goal gets a line saying how you know it worked, and that line needs a number in it. "The pipeline should be fast" is not something anyone can check. "Data is queryable within 10 minutes of the API call" is.
+The Problem this project it trying to address is fatigue. This robotic arm is to provide assistance to the user hence they can receive an extra pair of hands when needed. 
 
-**Goal 1:** [what the project has to achieve, in plain language]
-**How I know it worked:** [the measurable version]
+This project is currently in the last stage of its development as the assembly just needs to be upgraded with servo control as I am currently waiting for ordered parts. 
 
-**Goal 2:** [...]
-**How I know it worked:** [...]
+Tools, components and manufacturing methods:
+- PTC Creo for CAD development
+- 3D printing for manufacture
+- Velxio for simulation control
+- Arduino, servomotors and potentiometers for motion control
+- GitHub for Project documentation 
 
-> **Why this matters:** almost every portfolio project skips straight to the tools. Naming what the project had to achieve, before you name a single tool, is the thing that makes the rest of this document read like a professional wrote it.
+Final outcome: A working robotic gripper assembly with servo motor control. Designed in Creo, tolerance tested through 3D printing iterations, and documented on GitHub
 
-## Architecture
+Goal 1: Robotic Arm must achieve mechanical motion 
+ Result: The servomotors rotated the elbow joints by at least 60 degrees
 
-![Architecture](images/architecture.png)
+Goal 2: Fabricte a physical prototype 
+  Result: CAD components were 3D printed 
 
-Draw this yourself, export it as a PNG and commit it into `/images`. Do not link to a Miro board that needs an account. If someone only looks at one thing in this repo, it will be this picture.
+Goal 3: Implement basic control circuitry  
+  Result: wired a potentiometer to a servomotor and controlled it with an Arduino  
+
+## Initial Architecture design and features
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/35252ac8-087c-45a5-b61a-76febcdc4e43" Height="600">
+  <img src="https://github.com/user-attachments/assets/308624b4-c759-4c6b-ac1f-d21b8328e25c" Height="482">
+</p>
+Early concept sketch showing arm structure joint movement and gripper mechanism.
 
 # Contents
 
-- [The Data Set](#the-data-set)
-- [Constraints](#constraints)
-- [Used Tools](#used-tools)
-  - [Connect](#connect)
-  - [Buffer](#buffer)
-  - [Processing](#processing)
-  - [Storage](#storage)
-  - [Visualization](#visualization)
-- [Pipelines](#pipelines)
-  - [Stream Processing](#stream-processing)
-    - [Storing Data Stream](#storing-data-stream)
-    - [Processing Data Stream](#processing-data-stream)
-  - [Batch Processing](#batch-processing)
-  - [Visualizations](#visualizations)
-- [Demo](#demo)
-- [What Breaks](#what-breaks)
-- [Conclusion](#conclusion)
+- [Project Overview & Requirements](#Project-Overview--Requirements)
+- [Constraints](#Constraints)
+- [Used Tools & Components](#Used-Tools--Components)
+  - [CAD & Mechanical Design](#CAD--Mechanical-Design)
+  - [Actuation, Electronics & Control](#Actuation-Electronics--Control)
+  - [Manufacturing & Prototyping](#Manufacturing--Prototyping)
+  - [Version Control & Documentation](#Version-Control--Documentation)
+      - [Repository Structure](#Repository-Structure)
+- [Design Development & Iteration](#Design-Development--Iteration)
+  - [Tolerances, Fits & Interfaces](#tolerances-fits--interfaces)
+- [Testing & Validation](#Testing--Validation)
+- [Demo](#Demo)
+- [What Breaks / Current Limitations](#What-Breaks--Current-Limitations)
+- [Future Development](#Future-Development)
+- [Conclusion](#Conclusion)
 
+## Project Overview & Requirements
 
-# The Data Set
+The Robotic arm/gripper is intended to be able to pick up and move small lightweight objects using servocontrolled motion. The project has been designed to have 4 joint and 5 degrees of freedom. The current version is only has 4 degrees of freedom and 3 joints with the ability to move with servomotor control. The project current stage is fully developed. The Robotic arms requirements are:
 
-- Explain the data set
-- Why did you choose it?
-- What do you like about it?
-- What is problematic?
-- What do you want to do with it?
+- to move at least 60 degrees of motion at each joint
+- to be a physical model
+- to cost no more than £50
+- to use circuitry
+- to be able to pick up and grip objects
+- to have at least 2 degrees of freedom
+- to have appropriate measurements
+- to have appropriate coding
 
-## How much data is it
+I have met the first requirement due to my [final demo](#Demo) which demonstrates that the robotic arm prototype can move 64 degrees. I have also met the second, third and forth requirements as I have 3D printed my robotic arm and have used circuitry such as microcontrollers, servomotors and potentiometers to bring my design to life, whilst keeping under my budget. Requirements 6 and 7 have also been met as the final products shows at least 2 degrees of freedom and appropriate measurements due a clearance of ±0.4mm being used.
 
-Show the arithmetic, do not just say it is a lot. Walk the chain from the source to the total:
+Requirements I haven't met are 5 and 8 as I didn't have the money to 3D print the robotic gripper head meaning that only a simulation could be shown to display its objected lifting capabilities meaning that this requirement can't be completely validated. Therefore if I had to redo the project I would make a physical gripper head to validate this. Another requirement I didn't meet was appropriate coding as I used AI to create this C++ code, I haven't learned how to use C yet although I do know how to use Python and MATLABS. Hence, if I had to redo the project I would learn to use C++ before hand so I could validate this programming as my own.
 
-> 2,100 stations, polled every 5 minutes, is 288 polls a day per station, so 604,800 records a day. Each record is around 400 bytes of JSON, which is about 240 MB a day raw and 12 MB a day once it is in Parquet. Over 6 months that is 2.2 GB.
+## Constraints
 
-Do this and every tool choice further down has a number to point at. Skip it and your choices look arbitrary, because they are. It also means that when someone asks you in an interview what happens at 100x, you already have the number to multiply.
+Budget: £50 was the maximum amount of money I was willing to spend on this project. This stopped me from being able to 3D print the gripper head of the robotic arm, as I would have gone over budget. Hence I could only 3D print the body for the prototype. Therefore, I decided to simulate how the gripper works as a substitute. 
 
-# Constraints
+Time: The projects deadline was mid September 2026 with a project window frame of about 6 weeks
 
-What you had to work with. Be straight about it, this is not an apology.
+Hardware: For this project, I worked primarily with a standard Laptop and iPad. This limited me in simulating how my Robotic arm would react to stress and thermal analysis as simulation required an NVIDIA GPU. furthermore, this project caused me to borrow Arduino, servomotors, potentiometers and more from my university. 
 
-- Budget: [what you were willing to spend per month]
-- Compute: [laptop, one small VM, free tier]
-- Data you do not control: [rate limits, no history available, schema can change without warning]
-- Time: [what you gave this]
+Manufacturing: Manufacturing for the robotic arm was completed at my university as I didn't own a 3D printer. Black PLA filament was used for modelling. CAD parts were turned into STL files and exported to the device using a flash drive which I had to purchase, reducing my budget.
 
-"No budget, so everything runs on free tiers and my laptop" explains half your architecture in one line, and saying it plainly reads as confidence.
+Geometry / packaging: The robotic arm was limited due to the size of the wings on each servomotor. Hence I had to order servo linkages off Amazon to attach each members to each servomotor causing a reduction in my budget that could have been spent else where.
 
-# Used Tools
+Safety / reliability: Safety and reliability limits involved the circuitry not being built into the robotic arms design. Hence loose wiring occurring was greater meaning that the devices function could fail. 
 
-- Explain which tools you use and why
-- How do they work (don't go too deep into details, but add links)
-- Why did you choose them
-- How did you set them up
+## Used Tools & Components
 
-For each layer, also say what you considered and rejected. A choice with a rejected alternative next to it is worth ten times a choice on its own, and it is what an interviewer will actually ask about.
+- PTC Creo was used for CAD as I already knew how to use this software. Creo covers modelling, assemblies and drawings in one place making it a good choice for the robotic arms design. An alternative I thought about using was SolidWorks as I have experience with this software but haven’t used it in 2 years hence, I chose Creo.
+ 
+- 3D printing was used to physically manifest parts. This went hand in hand with my CAD modelling as I could copy the designs into STL files used for quick and easy printing. Making it the strongest option. An alternative I thought about was cutting foam using a hot wire cutter, but this wouldn’t have been passive work and would have taken up a lot of time meaning I could have fallen behind schedule.
+  
+- Arduino was used for driving the servomotors when an input was given to the potentiometers. This allowed me to control the rotation of the robotic arm’s members. Components were connected via wiring through a breadboard. An alternative I thought about using was a Raspberry Pi, but this was far too complex than what I needed.
+  
+- Servomotors were used for controlling the members of the robotic arm. These were connected to each member via metal rods. An alternative I thought about using was a DC motor, but its torque was too low.
+  
+- GitHub was used to document my project as it provided branching which allowed me to update my progress without affecting the main database until I was ready.
+  
+- Velxio was a simulator I used for designing my circuitry before I assembled it physically. This helped me to design it physically
 
-> **Storage: Postgres on the same box.** Considered DuckDB and the Snowflake free tier. The whole dataset is 2 GB, but the dashboard reads while the loader writes and DuckDB does not love that. Snowflake would work fine and would also be me picking a warehouse to have a warehouse on my CV.
+[AI Arduino source code](Physical%20and%20software%20simulations/sketch.ino)  
+![Velxio simulation](Images/Velxio%20simulation%20.jpg)
 
-Not every project has all five layers. If you have no buffer, say so and say why you did not need one. An empty section with an honest sentence in it is better than pretending.
+## CAD & Mechanical Design
 
-## Connect
-*Everything for data ingestion — pulling data or receiving it, and the tools and processing that make that happen.*
+CAD software used: PTC Creo, was used as it was the software I have the most expirience with. 
 
-## Buffer
-*Everything to do with message queues (e.g. Kafka, Kinesis, Pub/Sub) that sit between ingestion and processing.*
+Overall assembly: The Over all assembly features around 20+ parts with some parts being used more than once. Two assemblies were created the gripper head and the Robotic arm. The mechanism had 5 degrees of freedom. 
+![CAD Assembly](Images/CAD%20finished%20assembly.jpg)
 
-## Processing
-*Everything with processing — Python scripts, Spark, dockerized apps, orchestration and observability.*
+Key mechanisms: Gripper assembly, small arm, medium arm, large arm, base joint, base plate
 
-## Storage
-*Where the data lands — OLAP and OLTP databases, data lakes and lakehouses.*
+Motion / mechanism analysis: Checked rotary motion at each joint, at extreme angles there were limits but this was a desired outcome to avoid clashing.
 
-## Visualization
-*How people and systems consume the data — apps, dashboards, BI tools and, of course, APIs for clients.*
+Engineering drawings: All the [3D printing parts](3D%20printing%20parts/) needed drawing due to tolerancing required for smooth connections when 3D printing.
 
-# Pipelines
+Design trade-offs: To ensure that the members were as light as possible, for smoother servomotor control, this involved removing as much material as possible making the parts weaker. However, this made the cost to print cheaper saving money. 
 
-- Explain the pipelines you built
-- Go through your development and link to the source code in `/sources`
+Alternative designs considered: Only using a 2 member design was something I had considered as it made the design more simplistic and cheap. However this reduced the robotic arms reach making it less practical. Therefore, I gave the design 3 members. For the gripper head I thought about using gears but this seemed too complicated for the design so I stuck with servo driven motion. 
 
-Link to the files, do not paste the whole pipeline in here. The code already lives in the repo and a README that turns into a code dump stops being readable. Short snippets to show one interesting bit are good.
+## Actuation, Electronics & Control
 
-Say what the pipeline does when something goes wrong. Retries, what happens to a bad record, whether the job fails loudly or writes garbage quietly. This is the part people forget and it is exactly the part that separates a project from a tutorial.
+Microcontroller: ELEGO UNOR3 - its role was to turn code into a set of instructions between the potentiometer and the servomotor causing motion. This was suitable as it provided enough voltage and amplitude for the job.
 
-## Stream Processing
-## Batch Processing
-## Visualizations
+Actuators: Used standard hobby servomotor model S3003 for simple motion control
 
-# Demo
+User input: Turning Potentiometer 
 
-- Add a demo video here
-- Or link to your presentation video of the project
+Power: The circuitry was powered via my laptop and a booster I bought to prevent the microcontroller's fuse from blowing
 
-A two minute screen recording of the thing actually running does more than three paragraphs. A repo with no visible output is hard to tell apart from a repo that never worked.
+Wiring: Standard ELEGO male-male wiring was used to connect each component to the breadboard
 
-# What Breaks
+Control logic: Input (potentiometer is turned), microcontroller (ELEGO processes input to produce the required output using code), Output (servomotor rotates)
+### physical Arduino-servo simulation
+https://github.com/user-attachments/assets/86161a06-1482-4143-b839-d0289b86b35f
 
-Three or four honest points. What you chose not to solve, what falls over if the data grows, and what you would change if you built it again.
+safety limits: servomotors were placed inside members to prevent damage and servo-rotation was limited to prevent collisions.
 
-You already have your volume numbers, so multiply them and say what breaks first. You do not have to fix it. Knowing where the ceiling is beats pretending there isn't one.
+## Manufacturing & Prototyping
 
-- **[What breaks first]** [At what point, and what you would do about it]
-- **[What you deliberately skipped]** [Why it was not worth it at this size]
-- **[Risk you accepted]** [What happens if it hits, and why you decided to live with it]
+As there were so many parts to print, this would have cost a lot of money, hence I could only print the main parts of the robotic arm. This excluded bearings and rods as well as the gripper head.  The gripper head was very intricate and would have taken a lot of time and resources to print, so I simulated it instead. Manufacturing limitations led to me altering the original parts making them easier to 3D print. As hovering displayed in the initial designs would have caused the software to produce lots of supports causing rough surfaces and greater friction reducing smooth servo control. 
 
-Deciding which risks to ignore is the part that only someone who has shipped something can do. Anyone can list risks.
+Parts were assembled and disassembled due to panels pinned at each joint which ensured the members stayed connected. Each connection point had a tolerance of ± 0.4mm so everything attached smoothly. On my first print of the Robotic arm failed to integrate this, hence reprints were done. The cost for this was around about £20 worth of materials for both sets of prints. 
 
-If your data touches people, add one honest paragraph on it. One paragraph, not a compliance chapter. If there is nothing personal in the data, one line saying you checked is also a fine answer.
+### Initial 3D print failure
+<img width="734" height="1163" alt="Image" src="https://github.com/user-attachments/assets/2c61a1b3-a637-4183-83d3-d16772c8057f" />
 
-# Conclusion
+## Version Control & Documentation
 
-Write a comprehensive conclusion.
+Explain how GitHub is used to organise the project. GitHub has been the central place for where I have organised all my work. I have structured files for CAD, 3D printing, Images, modifications and simulations. I have used the README to explain, what I did in the project as well as how and why for a plethora of decisions.
 
-- How did this project turn out
-- What major things have you learned
-- What were the biggest challenges
+### Repository Structure
+- STL files modified for 3D printing can be found [here](3D%20printing%20parts/)
+- CAD parts and assemblies can be found in the working directory [here](Creo%20project/)
+- Images documenting the project can be found [here](Images/)
+- Modified Parts for clearance, cost and weigh can be found [here](Modified%20parts%20for%20tolerances/)
+- Simulations for CAD, Arduino and the final product can be found [here](Physical%20and%20software%20simulations/)
+- README for the project story: goals, decisions, evidence, results, limitations and next steps can be found [here](README.md)
 
-Then go back up to the introduction and paste the short version of this into the executive summary.
+By using branches I updated a copy of the main repository. This allowed me to edit my README and filing by adding or deleting things. If I liked the work I completed with this branch, I could then merge it with the original to make it the main branch. If I didn't I could then discard the branch whilst keeping the initial main the same.
 
-Make the lessons specific. "I would add more tests" says nothing because everyone writes it. "I partitioned by ingest date and should have partitioned by event date, because every query I actually write filters on event date and now they all scan everything" says you went back and looked at your own work.
+Each edit caused by pushing new material to the origin was apart of my iterative design and if you go to my profile you can see all of the tweaks I made to this project throughout its life.
 
-(https://github.com/andkret/Cookbook)
+## Tolerances, Fits & Interfaces
+
+Initially all the connected parts for the Robotic arm had no clearance. Using a clearance was something I probably should have thought about in the initial 3D print. This meant that the first print was too tight causing a lot of friction stopping smooth servomotor control. This led to me to modify CAD parts for manufacturing purposes. This involved removing material for light weight and cost and using a clearance of ±0.4mm. This made it easier for the servomotors to move and lift the adjacent material. This helped me to learn that every time you design something, a tolerance should always be used in manufacture, otherwise components may not fit together as designed.
+
+## Testing & Validation
+
+Testing was completed non-destructively. Non-destructively the objective was to see if the project could rotate at least 60 degrees, this was mentioned at the start in my goals. To measure this I used a protractor the arm manage to move around 64 degrees and couldn't move any further. A limitation was the servomotors as they could only rotate 180 degrees. If I had to do the test again i would have used a different type of servomotor that could move 360 degrees. Hence each member would have been able to rotate further.
+
+Furthermore, I used non-destructive testing to assess the gripper head this was using CAD software as I couldn't 3D print the gripper. The objective was to use a servomotor to get the jaws of the gripper head to open and close. 
+
+https://github.com/user-attachments/assets/3b3507d3-5217-4580-a304-04e4b8625a54
+
+The result was that the gripper could open and close prefectly. A limitation of this is that I couldn't produce it physically hence I don't know truly if it would work. Therefore, if I had to do redo the project I would get more funding to print out the gripper. 
+
+## Demo
+
+This is a demo of the final product it shows me moving two of the robotic arms members using potentiometers and servomotors connected via a breadboard and microcontroller. This was were my robotic arm cam to life!
+
+### Robotic Arm Project Final Demonstration
+https://github.com/user-attachments/assets/79b7d7dd-8787-4b34-adfd-126fe1583319
+
+## What Breaks / Current Limitations
+
+-	One limit I reached was using more than 2 servomotors for the main prototype I would have liked to use 4. However, this would have involved massive changes CAD design and manufacture to allow for the servomotors to be integrated into the base plate and base joints. Hence if I had to produce a 3rd model, I would do that.
+  
+-	Another limit was the gripper head being printed. This would have taken a lot of time and money to produce due to there being so many parts. Hence if I had to produce another prototype, I would have increase my budget and extended my deadlines, to account for a clearance alteration, the time taken and cost to print.
+  
+- Currently nothing destructively breaks but servo motion is limited as there on no slots for the servos to work smoothly with. Theis is due to metal rods connecting the servos to each member become tight. This puts pressure on the servomotors causing them to move themselves as they aren’t fixed. Hence, for my next version I will fix the servos and add a slot in each member for the rods to move in.
+
+## Future Development
+
+Mechanical improvement: To 3D print the gripper head and attach it to the gripper arm so it looks more like the CAD model
+
+Electronics improvement: To add additional servomotors and using slotting for better servo motion 
+
+Additional testing: To simulate the gripper head physically and not just on CAD.
+
+Long-term development: To use AI-assisted control - use and AI to decide whether the robotic arm should pick something up or not.
+
+## Conclusion
+
+Overall, this project has provided an opportunity to apply the engineering design process from an initial design to a functional prototype. Looking back at my 3 goals I managed to achieve all of them as I created a robotic gripper which could rotate at least 60 degrees, fabricated a physical prototype and used basic circuitry in the final design.
+
+Major engineering decisions that made the biggest difference was using a clearance and removing material for a lighter and cheaper product. This iteration allowed me to save money and produce smooth servomotor control and taught me to apply these things straight away for future projects.
+
+Something that the Prototyping taught me that CAD alone did not was that using a clearance in a physical prototype is imperative whereas in a CAD assembly it is not. Hence, always account for real world problems as a stimulatory drawing cannot account for every issue.
+
+The biggest challenge I faced was using circuitry as I have never been taught mechatronics. Therefore, this was a challenge that taught me a lot about microcontrollers and circuits. Hence, I now feel more confident in using them now and in the future. 
+
+If I had to start the project again and change something I would give myself a larger time frame and a bigger budget to complete the robotic arm/gripper. As then I might have been able to make the gripper giving the project greater validation. 
