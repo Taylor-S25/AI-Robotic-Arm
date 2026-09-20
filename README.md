@@ -30,7 +30,7 @@ Goal 3: Implement basic control circuitry
 
 ## Initial Architecture design and features
 <p align="center">
-  <img src="PASTE-FIRST-IMAGE-LINK-HERE" width="45%">
+  <img src=<img width="340" height="482" alt="Image" src="https://github.com/user-attachments/assets/35252ac8-087c-45a5-b61a-76febcdc4e43" /> width="45%">
   <img src="PASTE-SECOND-IMAGE-LINK-HERE" width="45%">
 </p>
 Early concept sketch showing arm structure joint movement and gripper mechanism.
