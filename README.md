@@ -139,7 +139,7 @@ As there were so many parts to print, this would have cost a lot of money, hence
 Parts were assembled and disassembled due to panels pinned at each joint which ensured the members stayed connected. Each connection point had a tolerance of ± 0.4mm so everything attached smoothly. On my first print of the Robotic arm failed to integrate this, hence reprints were done. The cost for this was around about £20 worth of materials for both sets of prints. 
 
 ### Initial 3D print failure
-![Initial 3D print](Images/Initial%203D%20print.jpeg)
+<img width="734" height="1163" alt="Image" src="https://github.com/user-attachments/assets/2c61a1b3-a637-4183-83d3-d16772c8057f" />
 
 ## Version Control & Documentation
 
