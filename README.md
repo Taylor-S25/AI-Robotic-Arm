@@ -29,7 +29,10 @@ Goal 3: Implement basic control circuitry
   Result: wired a potentiometer to a servomotor and controlled it with an Arduino  
 
 ## Initial Architecture design and features
-![Initial sketch before CAD](Images/Initial%20sketch%20before%20CAD.jpg)
+<p align="center">
+  <img src="PASTE-FIRST-IMAGE-LINK-HERE" width="45%">
+  <img src="PASTE-SECOND-IMAGE-LINK-HERE" width="45%">
+</p>
 Early concept sketch showing arm structure joint movement and gripper mechanism.
 
 # Contents
